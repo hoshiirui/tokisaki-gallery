@@ -1,4 +1,4 @@
-import { Flex, Box, Image, useColorModeValue, HStack } from "@chakra-ui/react";
+import { Flex, Box, Image, HStack } from "@chakra-ui/react";
 
 interface PhotoProps {
   photo: {
@@ -19,11 +19,14 @@ function SinglePhotoCard({ photo }: PhotoProps) {
 
   console.log("photo object:", photo);
 
+  // Define your custom color value here
+  const customColorValue = "white"; // Replace with your desired color value
+
   return (
     <Box mb={4} display={"inline-block"}>
       <Flex w="full" alignItems="center" justifyContent="center">
         <Box
-          bg={useColorModeValue("white", "gray.800")}
+          bg={customColorValue} // Use your custom color value
           maxW="sm"
           position="relative"
         >
@@ -35,7 +38,7 @@ function SinglePhotoCard({ photo }: PhotoProps) {
 
           <Box p="6">
             <HStack flexDirection="column">
-              <Box color={useColorModeValue("gray.800", "white")} fontSize="sm">
+              <Box color="#3A2E26" fontSize="sm">
                 {photo.altTitle || "Default Alt Title"}
               </Box>
               <Box
