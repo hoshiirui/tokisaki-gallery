@@ -1,62 +1,7 @@
 import React from "react";
 import { Box, Image, Link } from "@chakra-ui/react";
-
-const srces = [
-  {
-    imageURL:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Smile as Bright as Sunflower",
-    altTitle: "あなたのためにすべて",
-  },
-  {
-    imageURL:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Smile as Bright as Sunflower",
-    altTitle: "あなたのためにすべて",
-  },
-  {
-    imageURL:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Smile as Bright as Sunflower",
-    altTitle: "あなたのためにすべて",
-  },
-  {
-    imageURL:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Smile as Bright as Sunflower",
-    altTitle: "あなたのためにすべて",
-  },
-  {
-    imageURL:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Smile as Bright as Sunflower",
-    altTitle: "あなたのためにすべて",
-  },
-  {
-    imageURL:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Smile as Bright as Sunflower",
-    altTitle: "あなたのためにすべて",
-  },
-  {
-    imageURL:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Smile as Bright as Sunflower",
-    altTitle: "あなたのためにすべて",
-  },
-  {
-    imageURL:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Smile as Bright as Sunflower",
-    altTitle: "あなたのためにすべて",
-  },
-  {
-    imageURL:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Smile as Bright as Sunflower",
-    altTitle: "あなたのためにすべて",
-  },
-];
+import photos from "../../../data/photos.json";
+import SinglePhotoCard from "../cards/SinglePhotoCard";
 
 export default function SingleGallery() {
   return (
@@ -67,15 +12,18 @@ export default function SingleGallery() {
         mx="auto"
         sx={{ columnCount: [1, 2, 3], columnGap: "70px" }}
       >
-        {srces.map((src, index) => (
-          <Image
-            key={index}
-            w="100%"
-            mb={10}
-            display="inline-block"
-            src={src.imageURL}
-            alt="Alt"
-          />
+        {photos.map((photo) => (
+          // <Image
+          //   key={photo.photoId}
+          //   w="100%"
+          //   mb={10}
+          //   display="inline-block"
+          //   src={`/img/${photo.eventId != null ? photo.eventId : "single"}/${
+          //     photo.photoId
+          //   }.jpg`}
+          //   alt="Alt"
+          // />
+          <SinglePhotoCard photo={photo} key={photo.photoId} />
         ))}
       </Box>
     </Box>

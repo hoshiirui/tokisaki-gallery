@@ -1,62 +1,59 @@
-"use client";
+import { Flex, Box, Image, useColorModeValue, HStack } from "@chakra-ui/react";
 
-import {
-  Flex,
-  Circle,
-  Box,
-  Image,
-  Badge,
-  useColorModeValue,
-  Icon,
-  chakra,
-  Tooltip,
-  HStack,
-} from "@chakra-ui/react";
-
-const data = {
-  imageURL:
-    "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-  name: "Smile as Bright as Sunflower",
-  altTitle: "あなたのためにすべて",
-};
-
-interface RatingProps {
-  rating: number;
-  numReviews: number;
+interface PhotoProps {
+  photo: {
+    photoId: string;
+    title: string;
+    altTitle: string;
+    eventId: string;
+    isThumbnail: boolean;
+    isFame: boolean;
+  };
 }
 
-function SinglePhotoCard() {
-  return (
-    <Flex p={50} w="full" alignItems="center" justifyContent="center">
-      <Box
-        bg={useColorModeValue("white", "gray.800")}
-        maxW="sm"
-        position="relative"
-      >
-        <Image
-          src={data.imageURL}
-          alt={`Picture of ${data.name}`}
-          roundedTop="lg"
-        />
+function SinglePhotoCard({ photo }: PhotoProps) {
+  // Check if photo is undefined
+  if (!photo) {
+    return null; // Render nothing if photo is undefined
+  }
 
-        <Box p="6">
-          <HStack flexDirection="column">
-            <Box fontSize="2xl" color={useColorModeValue("gray.800", "white")}>
-              {data.altTitle}
-            </Box>
-            <Box
-              fontSize="2xl"
-              fontWeight="semibold"
-              as="h4"
-              lineHeight="tight"
-              isTruncated
-            >
-              {data.name}
-            </Box>
-          </HStack>
+  console.log("photo object:", photo);
+
+  return (
+    <Box mb={4} display={"inline-block"}>
+      <Flex w="full" alignItems="center" justifyContent="center">
+        <Box
+          bg={useColorModeValue("white", "gray.800")}
+          maxW="sm"
+          position="relative"
+        >
+          <Image
+            src={`/img/${
+              photo?.eventId !== "none" ? photo.eventId : "single"
+            }/${photo.photoId}.jpg`}
+          />
+
+          <Box p="6">
+            <HStack flexDirection="column">
+              <Box color={useColorModeValue("gray.800", "white")} fontSize="sm">
+                {photo.altTitle || "Default Alt Title"}
+              </Box>
+              <Box
+                fontSize="lg"
+                fontWeight="medium"
+                as="h4"
+                lineHeight="tight"
+                letterSpacing={"3px"}
+                textTransform={"uppercase"}
+                textAlign={"center"}
+              >
+                {photo.title || "Default Title"}
+              </Box>
+            </HStack>
+          </Box>
         </Box>
-      </Box>
-    </Flex>
+      </Flex>
+    </Box>
   );
 }
 

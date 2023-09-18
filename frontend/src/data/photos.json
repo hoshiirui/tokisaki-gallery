@@ -1,0 +1,146 @@
+[
+  {
+    "photoId": "tsy01",
+    "title": "You're My Flashlight",
+    "altTitle": "私の光",
+    "eventId": "fusun",
+    "isThumbnail": true,
+    "isFame": true
+  },
+  {
+    "photoId": "tsy02",
+    "title": "Smile As Bright As Sunflower",
+    "altTitle": "ひまわりのように明るい笑顔",
+    "eventId": "none",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "tsy03",
+    "title": "Sunflower of The Beginning",
+    "altTitle": "始まりのひまわり",
+    "eventId": "fusun",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "tsy04",
+    "title": "A Sunflower Promise",
+    "altTitle": "ひまわりの約束",
+    "eventId": "fusun",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "tsy05",
+    "title": "Want to Join Me?",
+    "altTitle": "参加したいですか？",
+    "eventId": "fusun",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "tsy06",
+    "title": "I've Been Waiting For You",
+    "altTitle": "君を待っていました",
+    "eventId": "fusun",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "tsy07",
+    "title": "Dinner With You v1",
+    "altTitle": "あなたとの夕食 v1",
+    "eventId": "fusun",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "tsy08",
+    "title": "Dinner With You v2",
+    "altTitle": "あなたとの夕食 v2",
+    "eventId": "fusun",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "tm201",
+    "title": "Autumn's Recital",
+    "altTitle": "秋のリサイタル",
+    "eventId": "none",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "km201",
+    "title": "Springbloom Missive",
+    "altTitle": "春の花の手紙",
+    "eventId": "nikeb",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "km202",
+    "title": "Encounter Under The Bright Sun",
+    "altTitle": "明るい太陽の下での出会い",
+    "eventId": "nikeb",
+    "isThumbnail": true,
+    "isFame": false
+  },
+  {
+    "photoId": "kc201",
+    "title": "I Have Clara Too!",
+    "altTitle": "私のクララ",
+    "eventId": "nikeb",
+    "isThumbnail": true,
+    "isFame": false
+  },
+  {
+    "photoId": "md201",
+    "title": "Secret Agent and The Devil",
+    "altTitle": "私のクララ",
+    "eventId": "nikeb",
+    "isThumbnail": true,
+    "isFame": false
+  },
+  {
+    "photoId": "kd201",
+    "title": "Wanderer and The Devil",
+    "altTitle": "私のクララ",
+    "eventId": "nikeb",
+    "isThumbnail": true,
+    "isFame": false
+  },
+  {
+    "photoId": "ac201",
+    "title": "A Gentle Reunion",
+    "altTitle": "優しい再会",
+    "eventId": "sinfe",
+    "isThumbnail": true,
+    "isFame": true
+  },
+  {
+    "photoId": "mnd01",
+    "title": "Warmth Smile of The Gambler",
+    "altTitle": "ギャンブラーの温かな笑顔",
+    "eventId": "yayac",
+    "isThumbnail": true,
+    "isFame": true
+  },
+  {
+    "photoId": "yi201",
+    "title": "The Complementary Symphony",
+    "altTitle": "補完的な交響曲",
+    "eventId": "morud",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yi202",
+    "title": "The Complementary Symphony",
+    "altTitle": "補完的な交響曲",
+    "eventId": "morud",
+    "isThumbnail": false,
+    "isFame": false
+  }
+]

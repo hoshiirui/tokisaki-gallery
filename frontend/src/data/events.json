@@ -1,0 +1,56 @@
+[
+  {
+    "eventId": "nikeb",
+    "name": "Nikeba no Matsuri",
+    "location": "Politeknik Negeri Bali",
+    "date": "2023-08-20T14:30:00.000Z",
+    "description": "A event held by lalalala",
+    "link": "www.google.com",
+    "isFame": true
+  },
+  {
+    "eventId": "yayac",
+    "name": "Ya-Ya Con",
+    "location": "Living World Denpasar",
+    "date": "2023-09-10T14:30:00.000Z",
+    "description": "A event held by lalalala",
+    "link": "www.google.com",
+    "isFame": true
+  },
+  {
+    "eventId": "morud",
+    "name": "Moru De",
+    "location": "Arthasedana Singaraja",
+    "date": "2023-09-10T14:30:00.000Z",
+    "description": "A event held by lalalala",
+    "link": "www.google.com",
+    "isFame": true
+  },
+  {
+    "eventId": "yeoly",
+    "name": "Yeolyora no Matsuri",
+    "location": "International Conference Center - Mall Bali Galeria",
+    "date": "2023-07-01T14:30:00.000Z",
+    "description": "A event held by lalalala",
+    "link": "www.google.com",
+    "isFame": true
+  },
+  {
+    "eventId": "sinfe",
+    "name": "Sinfest Kirameku",
+    "location": "LP RRI Denpasar",
+    "date": "2023-09-10T14:30:00.000Z",
+    "description": "A event held by lalalala",
+    "link": "www.google.com",
+    "isFame": true
+  },
+  {
+    "eventId": "fusun",
+    "name": "My Future Sunflower",
+    "location": "Tokisaki's Domain Expansion",
+    "date": "2023-09-10T14:30:00.000Z",
+    "description": "A event held by lalalala",
+    "link": "www.google.com",
+    "isFame": true
+  }
+]
