@@ -13,15 +13,15 @@ const NavDesktopButton = ({ name, url }: props) => {
     <Stack>
       <Button
         variant={"unstyled"}
-        color={router.pathname == url ? "white" : "whiteAlpha.400"}
-        _hover={{ color: "white" }}
+        color={router.pathname == url ? "#3A2E26" : "rgba(58, 46, 38, 0.5)"}
+        _hover={{ color: "#3A2E26" }}
         letterSpacing={"3px"}
         textTransform="uppercase"
       >
         {name}
       </Button>
       {router.pathname == url ? (
-        <Box width={"100%"} height={"2px"} bgColor={"white"} marginTop={-2} />
+        <Box width={"100%"} height={"2px"} bgColor={"#3A2E26"} marginTop={-2} />
       ) : null}
     </Stack>
   );

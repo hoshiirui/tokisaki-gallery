@@ -47,8 +47,8 @@ const Navbar = () => {
       py={"20px"}
       alignItems={"center"}
     >
-      <Box>
-        <Image src="/assets/tokisakilogo.png" />
+      <Box w={150}>
+        <Image src="/assets/tokisakilogo-black.png" />
       </Box>
       <HStack spacing={"40px"}>
         {navbarLists.map((navbarList) => {
