@@ -96,6 +96,14 @@
     "isFame": false
   },
   {
+    "photoId": "acc01",
+    "title": "An Accelerating Melody",
+    "altTitle": "加速するメロディー",
+    "eventId": "none",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
     "photoId": "md201",
     "title": "Secret Agent and The Devil",
     "altTitle": "私のクララ",
@@ -136,10 +144,26 @@
     "isFame": false
   },
   {
-    "photoId": "yi202",
-    "title": "The Complementary Symphony",
+    "photoId": "tsy09",
+    "title": "Lost Somewhere",
     "altTitle": "補完的な交響曲",
-    "eventId": "morud",
+    "eventId": "none",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "krs01",
+    "title": "A Guitar Hero",
+    "altTitle": "ギターの英雄",
+    "eventId": "none",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "sun01",
+    "title": "As The Sunset Falls",
+    "altTitle": "夕日が落ちるにつれて",
+    "eventId": "none",
     "isThumbnail": false,
     "isFame": false
   }

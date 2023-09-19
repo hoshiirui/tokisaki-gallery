@@ -3,7 +3,26 @@ import { Box, Image, Link } from "@chakra-ui/react";
 import photos from "../../../data/photos.json";
 import SinglePhotoCard from "../cards/SinglePhotoCard";
 
-export default function SingleGallery() {
+interface SingleGalleryProps {
+  isFame?: boolean;
+  isSingleGallery?: boolean;
+}
+
+export default function SingleGallery({
+  isFame,
+  isSingleGallery,
+}: SingleGalleryProps) {
+  let filteredPhotos = photos;
+
+  // Apply filters based on props
+  if (isFame) {
+    filteredPhotos = filteredPhotos.filter((photo) => photo.isFame === true);
+  }
+
+  if (isSingleGallery) {
+    filteredPhotos = filteredPhotos.filter((photo) => photo.eventId === "none");
+  }
+
   return (
     <Box px={"70px"}>
       <Box
@@ -12,17 +31,7 @@ export default function SingleGallery() {
         mx="auto"
         sx={{ columnCount: [1, 2, 3], columnGap: "70px" }}
       >
-        {photos.map((photo) => (
-          // <Image
-          //   key={photo.photoId}
-          //   w="100%"
-          //   mb={10}
-          //   display="inline-block"
-          //   src={`/img/${photo.eventId != null ? photo.eventId : "single"}/${
-          //     photo.photoId
-          //   }.jpg`}
-          //   alt="Alt"
-          // />
+        {filteredPhotos.map((photo) => (
           <SinglePhotoCard photo={photo} key={photo.photoId} />
         ))}
       </Box>

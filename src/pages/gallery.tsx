@@ -1,3 +1,4 @@
+import React from "react";
 import HomeHero from "@/components/views/home/HomeHero";
 import SinglePhotoCard from "@/components/widgets/cards/SinglePhotoCard";
 import Footer from "@/components/widgets/footer/Footer";
@@ -6,17 +7,18 @@ import Navbar from "@/components/widgets/navbar/Navbar";
 import SingleGallery from "@/components/widgets/singleGallery/SingleGallery";
 import { Box } from "@chakra-ui/react";
 
-export default function Home() {
+const gallery = () => {
   return (
     <Box>
       <Navbar />
-      <HomeHero />
       <HimawariHeader
-        title="Gallery of Fame"
-        desc="This show the best photos I’ve taken so far..."
+        title="Exquisite Exhibition"
+        desc="Here is my photos that I’ve taken so far. Feel free to look at it!"
       />
-      <SingleGallery isFame={true} />
+      <SingleGallery isSingleGallery={true} />
       <Footer />
     </Box>
   );
-}
+};
+
+export default gallery;

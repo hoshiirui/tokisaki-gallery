@@ -40,28 +40,41 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <Flex
-      width={"100vw"}
-      justifyContent={"space-between"}
-      px={"70px"}
-      py={"20px"}
-      alignItems={"center"}
+    <Box
+      position={
+        router.pathname == "/" ? "absolute" : "inherit"
+      } /* Position the navbar absolutely */
+      top="0" /* Place it at the top of the page */
+      left="0"
+      right="0"
+      width="100vw"
+      px="70px"
+      py="20px"
+      zIndex="999"
     >
-      <Box w={150}>
-        <Image src="/assets/tokisakilogo-black.png" />
-      </Box>
-      <HStack spacing={"40px"}>
-        {navbarLists.map((navbarList) => {
-          return (
-            <NavDesktopButton
-              key={navbarList.id}
-              name={navbarList.name}
-              url={navbarList.url}
-            />
-          );
-        })}
-      </HStack>
-    </Flex>
+      <Flex justifyContent={"space-between"} alignItems={"center"}>
+        <Box w={150}>
+          <Image
+            src={
+              router.pathname == "/"
+                ? "/assets/tokisakilogo.png"
+                : "/assets/tokisakilogo-black.png"
+            }
+          />
+        </Box>
+        <HStack spacing={"40px"}>
+          {navbarLists.map((navbarList) => {
+            return (
+              <NavDesktopButton
+                key={navbarList.id}
+                name={navbarList.name}
+                url={navbarList.url}
+              />
+            );
+          })}
+        </HStack>
+      </Flex>
+    </Box>
   );
 };
 

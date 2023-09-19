@@ -1,7 +1,12 @@
 import { HStack, Stack, Image, Box, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
 
-const HimawariHeader = () => {
+interface HimawariHeaderProps {
+  title: string;
+  desc: string;
+}
+
+const HimawariHeader = ({ title, desc }: HimawariHeaderProps) => {
   return (
     <Flex
       width={"100vw"}
@@ -12,15 +17,15 @@ const HimawariHeader = () => {
       direction={"column"}
       my={"50px"}
     >
-      <HStack justifyContent={"space-between"} spacing={0}>
+      <HStack justifyContent={"space-between"} spacing={4}>
         <Stack>
-          <Image w={"50%"} src="/assets/header/diamond.png" />
+          <Image h={"2vh"} src="/assets/header/diamond.png" />
         </Stack>
         <Stack>
-          <Image w={"50%"} src="/assets/header/himawari.png" />
+          <Image h={"6vh"} src="/assets/header/himawari.png" />
         </Stack>
         <Stack>
-          <Image w={"50%"} src="/assets/header/diamond.png" />
+          <Image h={"2vh"} src="/assets/header/diamond.png" />
         </Stack>
       </HStack>
       <Box
@@ -31,7 +36,7 @@ const HimawariHeader = () => {
         as="h6"
         color="#3a2e26"
       >
-        Exquisite Exhibition
+        {title}
       </Box>
       <Box
         fontSize={"2xl"}
@@ -40,7 +45,7 @@ const HimawariHeader = () => {
         fontStyle={"italic"}
         as="h6"
       >
-        Here's my photos I've taken so far. Feel free to look at it!
+        {desc}
       </Box>
     </Flex>
   );
