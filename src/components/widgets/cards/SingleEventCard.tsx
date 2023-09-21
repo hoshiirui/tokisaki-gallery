@@ -43,24 +43,25 @@ function SingleEventCard({ event }: EventProps) {
           <Image src={`/img/${event.eventId}/${thumbnailPhoto?.photoId}.jpg`} />
 
           <Box py="6">
-            <HStack flexDirection="column" alignItems={"flex-start"}>
-              <Box color="#3A2E26" fontSize="sm" fontStyle={"italic"}>
+            <HStack flexDirection="column" alignItems={"flex-start"} gap={0}>
+              <Box color="#3A2E26" fontSize="md" fontStyle={"italic"}>
                 {event.location || "Default Alt Title"}
               </Box>
               <Box
-                fontSize="xl"
-                fontWeight="medium"
+                fontSize="2xl"
+                fontWeight="semibold"
                 as="h4"
                 lineHeight="tight"
                 letterSpacing={"3px"}
                 textTransform={"uppercase"}
+                marginBottom={"3"}
               >
                 {event.name || "Default Title"}
               </Box>
               <Box fontSize="sm">
                 {event.description || "Default Alt Title"}
               </Box>
-              <Box fontSize="lg" fontWeight={"bold"}>
+              <Box fontSize="xl" fontWeight={"bold"}>
                 {formatDate(event.date) || "Default Alt Title"}
               </Box>
             </HStack>
