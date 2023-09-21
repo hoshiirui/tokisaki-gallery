@@ -140,7 +140,7 @@
     "title": "The Complementary Symphony",
     "altTitle": "補完的な交響曲",
     "eventId": "morud",
-    "isThumbnail": false,
+    "isThumbnail": true,
     "isFame": false
   },
   {
@@ -166,5 +166,13 @@
     "eventId": "none",
     "isThumbnail": false,
     "isFame": false
+  },
+  {
+    "photoId": "mnd02",
+    "title": "The Freezing Beauty",
+    "altTitle": "夕日が落ちるにつれて",
+    "eventId": "yeoly",
+    "isThumbnail": true,
+    "isFame": true
   }
 ]

@@ -15,7 +15,7 @@ export default function Home() {
         title="Gallery of Fame"
         desc="This show the best photos I’ve taken so far..."
       />
-      <SingleGallery isFame={true} />
+      <SingleGallery galleryType="photo" isFame={true} />
       <Footer />
     </Box>
   );
