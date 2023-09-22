@@ -1,5 +1,5 @@
 import { Flex, Box, Image, HStack } from "@chakra-ui/react";
-import photosData from "../../../data/photos.json"; // Import your photos JSON data
+import photosData from "../../../data/photos.json";
 
 interface EventProps {
   event: {
@@ -14,7 +14,7 @@ interface EventProps {
 }
 
 function formatDate(dateString: string) {
-  const options = { day: "numeric", month: "long", year: "numeric" as const }; // Specify "year" as "numeric"
+  const options = { day: "numeric", month: "long", year: "numeric" as const };
   const date = new Date(dateString);
   return date.toLocaleDateString(undefined, options);
 }

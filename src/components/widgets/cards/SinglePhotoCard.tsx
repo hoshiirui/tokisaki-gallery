@@ -1,4 +1,14 @@
-import { Flex, Box, Image, HStack } from "@chakra-ui/react";
+import { useState } from "react";
+import {
+  Flex,
+  Box,
+  Image,
+  HStack,
+  Drawer, // Import Drawer and related components
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+} from "@chakra-ui/react";
 
 interface PhotoProps {
   photo: {
@@ -12,51 +22,82 @@ interface PhotoProps {
 }
 
 function SinglePhotoCard({ photo }: PhotoProps) {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   // Check if photo is undefined
   if (!photo) {
-    return null; // Render nothing if photo is undefined
+    return null;
   }
 
-  console.log("photo object:", photo);
-
   // Define your custom color value here
-  const customColorValue = "white"; // Replace with your desired color value
+  const customColorValue = "white";
 
   return (
-    <Box mb={4} display={"inline-block"}>
-      <Flex w="full" alignItems="center" justifyContent="center">
-        <Box
-          bg={customColorValue} // Use your custom color value
-          maxW="sm"
-          position="relative"
-        >
+    <>
+      <Box
+        mb={4}
+        display={"inline-block"}
+        _hover={{
+          transform: "scale(1.10)",
+          transition: "transform 0.3s",
+        }}
+        onClick={() => setIsDrawerOpen(true)}
+      >
+        <Flex w="full" alignItems="center" justifyContent="center">
+          <Box bg={customColorValue} maxW="sm" position="relative">
+            <Image
+              src={`/img/${
+                photo?.eventId !== "none" ? photo.eventId : "single"
+              }/${photo.photoId}.jpg`}
+            />
+
+            <Box p="6">
+              <HStack flexDirection="column">
+                <Box color="#3A2E26" fontSize="sm">
+                  {photo.altTitle || "Default Alt Title"}
+                </Box>
+                <Box
+                  fontSize="lg"
+                  fontWeight="medium"
+                  as="h4"
+                  lineHeight="tight"
+                  letterSpacing={"3px"}
+                  textTransform={"uppercase"}
+                  textAlign={"center"}
+                >
+                  {photo.title || "Default Title"}
+                </Box>
+              </HStack>
+            </Box>
+          </Box>
+        </Flex>
+      </Box>
+
+      {/* Drawer */}
+      <Drawer
+        isOpen={isDrawerOpen}
+        placement="top"
+        onClose={() => setIsDrawerOpen(false)}
+        size="full"
+        trapFocus={false}
+      >
+        <DrawerOverlay onClick={() => setIsDrawerOpen(false)} />
+        <DrawerContent p={0} bg="rgba(0, 0, 0, 0.5)">
+          <DrawerCloseButton color={"white"} />
           <Image
+            paddingTop={6}
             src={`/img/${
               photo?.eventId !== "none" ? photo.eventId : "single"
             }/${photo.photoId}.jpg`}
+            alt={photo.title}
+            maxH="95vh"
+            maxW="100vw"
+            objectFit="contain"
+            onClick={() => setIsDrawerOpen(false)}
           />
-
-          <Box p="6">
-            <HStack flexDirection="column">
-              <Box color="#3A2E26" fontSize="sm">
-                {photo.altTitle || "Default Alt Title"}
-              </Box>
-              <Box
-                fontSize="lg"
-                fontWeight="medium"
-                as="h4"
-                lineHeight="tight"
-                letterSpacing={"3px"}
-                textTransform={"uppercase"}
-                textAlign={"center"}
-              >
-                {photo.title || "Default Title"}
-              </Box>
-            </HStack>
-          </Box>
-        </Box>
-      </Flex>
-    </Box>
+        </DrawerContent>
+      </Drawer>
+    </>
   );
 }
 
