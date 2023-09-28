@@ -33,7 +33,14 @@ function SingleEventCard({ event }: EventProps) {
   const customColorValue = "white"; // Replace with your desired color value
 
   return (
-    <Box mb={4} display={"inline-block"}>
+    <Box
+      mb={4}
+      display={"inline-block"}
+      _hover={{
+        transform: "scale(1.10)",
+        transition: "transform 0.3s",
+      }}
+    >
       <Flex w="full" alignItems="center" justifyContent="center">
         <Box
           bg={customColorValue} // Use your custom color value
@@ -59,7 +66,9 @@ function SingleEventCard({ event }: EventProps) {
                 {event.name || "Default Title"}
               </Box>
               <Box fontSize="sm">
-                {event.description || "Default Alt Title"}
+                {event.description.slice(0, 80) + "...  " ||
+                  "Default Alt Title"}
+                <b>Read More</b>
               </Box>
               <Box fontSize="xl" fontWeight={"bold"}>
                 {formatDate(event.date) || "Default Alt Title"}

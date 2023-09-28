@@ -174,5 +174,21 @@
     "eventId": "yeoly",
     "isThumbnail": true,
     "isFame": true
+  },
+  {
+    "photoId": "tsy10",
+    "title": "Path of Illumination",
+    "altTitle": "イルミネーションの道",
+    "eventId": "none",
+    "isThumbnail": true,
+    "isFame": true
+  },
+  {
+    "photoId": "mnd03",
+    "title": "Emanator of Remembrance",
+    "altTitle": "イルミネーションの道",
+    "eventId": "none",
+    "isThumbnail": true,
+    "isFame": true
   }
 ]
