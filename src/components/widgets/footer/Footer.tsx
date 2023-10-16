@@ -73,10 +73,16 @@ export default function Footer() {
           <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />
           </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
+          <SocialButton
+            label={"YouTube"}
+            href={"https://www.youtube.com/channel/UCB7ehsGS_spMDnI5VK80p5g"}
+          >
             <FaYoutube />
           </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
+          <SocialButton
+            label={"Instagram"}
+            href={"https://www.instagram.com/kazedaa73/"}
+          >
             <FaInstagram />
           </SocialButton>
         </Stack>

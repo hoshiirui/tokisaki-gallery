@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Image, Link } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
+import Link from "next/link";
 import photos from "../../../data/photos.json";
 import events from "../../../data/events.json";
 import SinglePhotoCard from "../cards/SinglePhotoCard";
@@ -58,7 +59,13 @@ export default function SingleGallery({
           sx={{ columnCount: [1, 2, 3], columnGap: "70px" }}
         >
           {filteredEvents.map((event) => (
-            <SingleEventCard event={event} key={event.eventId} />
+            <Link
+              key={event.eventId}
+              href="/gallery/[eventId]"
+              as={`/gallery/${event.eventId}`}
+            >
+              <SingleEventCard event={event} key={event.eventId} />
+            </Link>
           ))}
         </Box>
       </Box>

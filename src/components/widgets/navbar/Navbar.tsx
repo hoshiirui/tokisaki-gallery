@@ -32,7 +32,7 @@ const navbarLists = [
   {
     id: 6,
     name: "Merch",
-    url: "/merch",
+    url: "/eventDetails",
   },
 ];
 

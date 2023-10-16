@@ -190,5 +190,13 @@
     "eventId": "none",
     "isThumbnail": true,
     "isFame": true
+  },
+  {
+    "photoId": "tm202",
+    "title": "Memory's Resonance",
+    "altTitle": "イルミネーションの道",
+    "eventId": "none",
+    "isThumbnail": true,
+    "isFame": true
   }
 ]
