@@ -5,10 +5,14 @@ import HimawariHeader from "@/components/widgets/header/HimawariHeader";
 import Navbar from "@/components/widgets/navbar/Navbar";
 import SingleGallery from "@/components/widgets/singleGallery/SingleGallery";
 import { Box } from "@chakra-ui/react";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <Box>
+      <Head>
+        <title>{"Homepage - Tokisaki Gallery"}</title>
+      </Head>
       <Navbar />
       <HomeHero />
       <HimawariHeader

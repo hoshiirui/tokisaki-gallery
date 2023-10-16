@@ -9,6 +9,7 @@ import SingleEventCard from "../cards/SingleEventCard";
 interface SingleGalleryProps {
   isFame?: boolean;
   isSingleGallery?: boolean;
+  isExistEventId?: string;
   galleryType: string;
 }
 
@@ -16,6 +17,7 @@ export default function SingleGallery({
   isFame,
   isSingleGallery,
   galleryType,
+  isExistEventId,
 }: SingleGalleryProps) {
   if (galleryType === "photo") {
     let filteredPhotos = photos;
@@ -23,6 +25,12 @@ export default function SingleGallery({
     // Apply filters based on props
     if (isFame) {
       filteredPhotos = filteredPhotos.filter((photo) => photo.isFame === true);
+    }
+
+    if (isExistEventId) {
+      filteredPhotos = filteredPhotos.filter(
+        (photo) => photo.eventId === isExistEventId
+      );
     }
 
     if (isSingleGallery) {

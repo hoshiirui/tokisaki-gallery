@@ -7,6 +7,7 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
+  Image,
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
@@ -62,11 +63,11 @@ export default function Footer() {
         align={{ base: "center", md: "center" }}
       >
         {/* Replace the Logo component with an img element */}
-        <img
+        <Image
           src={"assets/tokisakilogo-black.png"} // Use the imported logo image as the src
           alt="My Logo"
-          height={32}
-          width={120} // Set the width of the image
+          height={"40px"}
+          width={"120px"} // Set the width of the image
         />
         <Text fontSize={"lg"}>© 2023 Okiya Rangga. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>

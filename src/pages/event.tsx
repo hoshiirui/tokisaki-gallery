@@ -4,11 +4,15 @@ import HimawariHeader from "@/components/widgets/header/HimawariHeader";
 import Navbar from "@/components/widgets/navbar/Navbar";
 import SingleGallery from "@/components/widgets/singleGallery/SingleGallery";
 import { Box } from "@chakra-ui/react";
+import Head from "next/head";
 import React from "react";
 
 const event = () => {
   return (
     <Box>
+      <Head>
+        <title>{"Event Lists - Tokisaki Gallery"}</title>
+      </Head>
       <Navbar />
       <HimawariHeader
         title="Set of Moments"

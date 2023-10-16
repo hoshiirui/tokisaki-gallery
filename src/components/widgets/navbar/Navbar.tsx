@@ -27,12 +27,12 @@ const navbarLists = [
   {
     id: 5,
     name: "About Us",
-    url: "/about",
+    url: "/aboutUs",
   },
   {
     id: 6,
     name: "Merch",
-    url: "/eventDetails",
+    url: "/merch",
   },
 ];
 

@@ -6,10 +6,14 @@ import HimawariHeader from "@/components/widgets/header/HimawariHeader";
 import Navbar from "@/components/widgets/navbar/Navbar";
 import SingleGallery from "@/components/widgets/singleGallery/SingleGallery";
 import { Box } from "@chakra-ui/react";
+import Head from "next/head";
 
 const gallery = () => {
   return (
     <Box>
+      <Head>
+        <title>{"Photo Recollections - Tokisaki Gallery"}</title>
+      </Head>
       <Navbar />
       <HimawariHeader
         title="Exquisite Exhibition"
