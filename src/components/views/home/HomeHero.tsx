@@ -31,6 +31,9 @@ export default function HomeHero() {
     },
   ];
 
+  const fontSizeTitle = useBreakpointValue({ base: "4xl", md: "6xl" });
+  const fontSizeDescription = useBreakpointValue({ base: "lg", md: "xl" });
+
   return (
     <Carousel
       showStatus={false}
@@ -39,18 +42,16 @@ export default function HomeHero() {
       autoPlay={true}
       interval={5000}
       renderIndicator={(clickHandler, isSelected, index) => (
-        // Conditionally render different images for active and inactive indicators
         <div
           onClick={clickHandler}
           className={`custom-indicator ${isSelected ? "selected" : ""}`}
           key={index}
           style={{
-            display: "inline-block", // Display the indicators horizontally
-            margin: "0 5px", // Add some margin between indicators (adjust as needed)
+            display: "inline-block",
+            margin: "0 5px",
             cursor: "pointer",
           }}
         >
-          {/* Use custom images based on the isSelected condition */}
           <img
             style={{ width: 60 }}
             src={
@@ -92,7 +93,7 @@ export default function HomeHero() {
                   lineHeight={1.2}
                   textTransform={"uppercase"}
                   letterSpacing={"10px"}
-                  fontSize={useBreakpointValue({ base: "4xl", md: "6xl" })}
+                  fontSize={fontSizeTitle}
                 >
                   {slide.title}
                 </Text>
@@ -101,9 +102,8 @@ export default function HomeHero() {
                   fontWeight={"light"}
                   fontStyle={"italic"}
                   lineHeight={1.2}
-                  fontSize={useBreakpointValue({ base: "lg", md: "xl" })}
+                  fontSize={fontSizeDescription}
                   maxW={"3xl"}
-                  // paddingLeft={"50px"}
                 >
                   {slide.description}
                 </Text>
