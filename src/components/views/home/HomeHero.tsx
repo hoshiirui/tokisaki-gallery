@@ -6,6 +6,7 @@ import {
   VStack,
   useBreakpointValue,
   Image,
+  Link,
 } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -109,21 +110,23 @@ export default function HomeHero() {
                   {slide.description}
                 </Text>
                 <Stack direction={"row"}>
-                  <Button
-                    bg={"transparent"}
-                    border={"1px solid"}
-                    color={"white"}
-                    _hover={{ bg: "blue.500" }}
-                    rounded={0}
-                    textTransform={"uppercase"}
-                    letterSpacing={"3px"}
-                    fontSize={"sm"}
-                    fontWeight={"normal"}
-                    px={"10"}
-                    py={"6"}
-                  >
-                    Read More
-                  </Button>
+                  <Link href="/gallery">
+                    <Button
+                      bg={"transparent"}
+                      border={"1px solid"}
+                      color={"white"}
+                      _hover={{ bg: "blue.500" }}
+                      rounded={0}
+                      textTransform={"uppercase"}
+                      letterSpacing={"3px"}
+                      fontSize={"sm"}
+                      fontWeight={"normal"}
+                      px={"10"}
+                      py={"6"}
+                    >
+                      Read More
+                    </Button>
+                  </Link>
                 </Stack>
               </Stack>
             </VStack>
