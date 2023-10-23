@@ -31,11 +31,11 @@ const EventDetails: React.FC = () => {
     setEvent(eventData);
   }, [eventId]);
 
-  function formatDate(dateString: string) {
-    const options = { day: "numeric", month: "long", year: "numeric" as const };
-    const date = new Date(dateString);
-    return date.toLocaleDateString(undefined, options);
-  }
+  // function formatDate(dateString: string) {
+  //   const options = { day: "numeric", month: "long", year: "numeric" as const };
+  //   const date = new Date(dateString);
+  //   return date.toLocaleDateString(undefined, options);
+  // }
 
   return (
     <Box>
@@ -46,11 +46,7 @@ const EventDetails: React.FC = () => {
       {/* Use the event data to populate the component */}
       <HimawariHeader
         title={event ? event.name : "Event Not Found"}
-        desc={
-          event
-            ? `${formatDate(event.date)} - ${event.location}`
-            : "Event Not Found"
-        }
+        desc={event ? `${event.date} - ${event.location}` : "Event Not Found"}
         hasDownloadButton={event ? event.link : ""}
         hasShortExplanation={
           event ? event.description : "Event Not Found Description"

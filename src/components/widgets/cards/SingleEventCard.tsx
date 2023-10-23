@@ -13,11 +13,11 @@ interface EventProps {
   };
 }
 
-function formatDate(dateString: string) {
-  const options = { day: "numeric", month: "long", year: "numeric" as const };
-  const date = new Date(dateString);
-  return date.toLocaleDateString(undefined, options);
-}
+// function formatDate(dateString: string) {
+//   const options = { day: "numeric", month: "long", year: "numeric" as const };
+//   const date = new Date(dateString);
+//   return date.toLocaleDateString(undefined, options);
+// }
 
 function SingleEventCard({ event }: EventProps) {
   // Check if photo is undefined
@@ -74,7 +74,8 @@ function SingleEventCard({ event }: EventProps) {
                 <b>Read More</b>
               </Box>
               <Box fontSize="xl" fontWeight={"bold"}>
-                {formatDate(event.date) || "Default Alt Title"}
+                {/* {formatDate(event.date) || "Default Alt Title"} */}
+                {event.date || "Default Alt Title"}
               </Box>
             </HStack>
           </Box>
