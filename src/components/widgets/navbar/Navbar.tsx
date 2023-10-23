@@ -1,7 +1,15 @@
 // Navbar.tsx
 
 import React, { useState } from "react";
-import { Box, Button, Flex, HStack, Image, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  HStack,
+  Image,
+  VStack,
+  Link,
+} from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import NavDesktopButton from "./NavDesktopButton";
 import NavMobileButton from "./NavMobileButton";
@@ -66,14 +74,16 @@ const Navbar = () => {
     >
       <Flex justifyContent={"space-between"} alignItems={"center"}>
         <Box w={150}>
-          <Image
-            src={
-              router.pathname == "/"
-                ? "/assets/tokisakilogo.png"
-                : "/assets/tokisakilogo-black.png"
-            }
-            alt="Tokisaki Logo"
-          />
+          <Link href="/">
+            <Image
+              src={
+                router.pathname == "/"
+                  ? "/assets/tokisakilogo.png"
+                  : "/assets/tokisakilogo-black.png"
+              }
+              alt="Tokisaki Logo"
+            />
+          </Link>
         </Box>
         <HStack spacing={"40px"} display={{ base: "none", md: "flex" }}>
           {navbarLists.map((navbarList) => {
