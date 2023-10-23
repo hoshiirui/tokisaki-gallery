@@ -83,7 +83,7 @@ export default function HomeHero() {
               background="rgba(0, 0, 0, 0.5)"
             >
               <Stack
-                maxW={"6xl"}
+                maxW={"100vw"}
                 align={"flex-start"}
                 spacing={6}
                 alignItems={"center"}
