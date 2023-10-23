@@ -25,7 +25,7 @@ export default function HomeHero() {
         "The only real treasure is in your head. Memories are better than diamonds and nobody can steal them from you",
     },
     {
-      backgroundImage: "assets/hero/mnd10.JPG",
+      backgroundImage: "assets/hero/mnd10.jpg",
       title: "A Moment That Shine",
       description:
         "Memory is a way of holding onto the things you love, the things you are, the things you never want to lose. Remembering is an act of resurrection, each repetition a vital layer of mourning, each one a healing layer",
