@@ -60,6 +60,7 @@ const Navbar = () => {
                 ? "/assets/tokisakilogo.png"
                 : "/assets/tokisakilogo-black.png"
             }
+            alt="Tokisaki Logo"
           />
         </Box>
         <HStack spacing={"40px"}>

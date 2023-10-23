@@ -47,7 +47,10 @@ function SingleEventCard({ event }: EventProps) {
           maxW="sm"
           position="relative"
         >
-          <Image src={`/img/${event.eventId}/${thumbnailPhoto?.photoId}.jpg`} />
+          <Image
+            src={`/img/${event.eventId}/${thumbnailPhoto?.photoId}.jpg`}
+            alt={event.name}
+          />
 
           <Box py="6">
             <HStack flexDirection="column" alignItems={"flex-start"} gap={0}>

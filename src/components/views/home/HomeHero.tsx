@@ -5,6 +5,7 @@ import {
   Text,
   VStack,
   useBreakpointValue,
+  Image,
 } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -52,7 +53,7 @@ export default function HomeHero() {
             cursor: "pointer",
           }}
         >
-          <img
+          <Image
             style={{ width: 60 }}
             src={
               isSelected
@@ -78,7 +79,7 @@ export default function HomeHero() {
             <VStack
               w={"full"}
               justify={"center"}
-              px={useBreakpointValue({ base: 4, md: 8 })}
+              px={8}
               background="rgba(0, 0, 0, 0.5)"
             >
               <Stack

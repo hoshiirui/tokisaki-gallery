@@ -49,6 +49,7 @@ function SinglePhotoCard({ photo }: PhotoProps) {
               src={`/img/${
                 photo?.eventId !== "none" ? photo.eventId : "single"
               }/${photo.photoId}.jpg`}
+              alt={photo.title}
             />
 
             <Box p="6">

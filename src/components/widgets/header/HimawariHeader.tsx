@@ -42,13 +42,13 @@ const HimawariHeader = ({
       >
         <HStack justifyContent={"space-between"} spacing={4}>
           <Stack>
-            <Image h={"2vh"} src="/assets/header/diamond.png" />
+            <Image h={"2vh"} src="/assets/header/diamond.png" alt="diamond1" />
           </Stack>
           <Stack>
-            <Image h={"6vh"} src="/assets/header/himawari.png" />
+            <Image h={"6vh"} src="/assets/header/himawari.png" alt="himawari" />
           </Stack>
           <Stack>
-            <Image h={"2vh"} src="/assets/header/diamond.png" />
+            <Image h={"2vh"} src="/assets/header/diamond.png" alt="diamond2" />
           </Stack>
         </HStack>
         <Box
