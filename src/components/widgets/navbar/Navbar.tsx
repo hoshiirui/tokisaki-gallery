@@ -60,7 +60,7 @@ const Navbar = () => {
       left="0"
       right="0"
       width="100vw"
-      px="70px"
+      px={{ base: "8", md: "70px" }}
       py="20px"
       zIndex="999"
     >
@@ -87,11 +87,12 @@ const Navbar = () => {
           })}
         </HStack>
         <Button
-          onClick={openMenu}
+          onClick={isMenuOpen === false ? openMenu : closeMenu}
           display={{ base: "block", md: "none" }}
           fontSize="lg"
+          zIndex={"999"}
         >
-          ☰
+          {isMenuOpen === false ? "☰" : "✕"}
         </Button>
       </Flex>
       {isMenuOpen && (
@@ -103,7 +104,7 @@ const Navbar = () => {
           bottom="0"
           bg="rgba(0, 0, 0, 0.9)"
           display={{ base: "block", md: "none" }}
-          zIndex={"999"}
+          zIndex={"998"}
         >
           <VStack
             h="100%"
@@ -118,20 +119,6 @@ const Navbar = () => {
                 url={navbarList.url}
               />
             ))}
-            <Button
-              onClick={closeMenu}
-              color="white"
-              _hover={{ color: "blue.500" }}
-              letterSpacing="3px"
-              textTransform="uppercase"
-              fontSize="sm"
-              fontWeight="normal"
-              px="10"
-              py="6"
-              variant="unstyled"
-            >
-              Close
-            </Button>
           </VStack>
         </Box>
       )}
