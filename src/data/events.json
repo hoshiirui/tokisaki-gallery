@@ -52,5 +52,14 @@
     "description": "As the seasonal flower blooms beautifully, born a girl that has an indescribable beauty...",
     "link": "www.google.com",
     "isFame": true
+  },
+  {
+    "eventId": "jfest",
+    "name": "J-Fest 2023",
+    "location": "Taman Jepun Denpasar",
+    "date": "2023-09-10T14:30:00.000Z",
+    "description": "As the seasonal flower blooms beautifully, born a girl that has an indescribable beauty...",
+    "link": "www.google.com",
+    "isFame": true
   }
 ]

@@ -198,5 +198,78 @@
     "eventId": "none",
     "isThumbnail": true,
     "isFame": true
+  },
+  {
+    "photoId": "jfs01",
+    "title": "Imbibitor Lunae's Judgement",
+    "altTitle": "イルミネーションの道",
+    "eventId": "jfest",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "jfs02",
+    "title": "The Dragon and The Butterfly",
+    "altTitle": "イルミネーションの道",
+    "eventId": "jfest",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "jfs03",
+    "title": "A Grafecul Inferno",
+    "altTitle": "イルミネーションの道",
+    "eventId": "jfest",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "jfs04",
+    "title": "In Search of Remembrance",
+    "altTitle": "イルミネーションの道",
+    "eventId": "jfest",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "jfs05",
+    "title": "Another Joyful Game with You",
+    "altTitle": "イルミネーションの道",
+    "eventId": "jfest",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "jfs06",
+    "title": "As Gorgeous as The Snowflake",
+    "altTitle": "イルミネーションの道",
+    "eventId": "jfest",
+    "isThumbnail": true,
+    "isFame": true
+  },
+  {
+    "photoId": "jfs07",
+    "title": "A Cute Zombie Appear!",
+    "altTitle": "イルミネーションの道",
+    "eventId": "jfest",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "jfs08",
+    "title": "The Yamato Nadeshiko",
+    "altTitle": "イルミネーションの道",
+    "eventId": "jfest",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "jfs09",
+    "title": "It's You That Hold The Purest Branch",
+    "altTitle": "イルミネーションの道",
+    "eventId": "jfest",
+    "isThumbnail": false,
+    "isFame": true
   }
+
 ]

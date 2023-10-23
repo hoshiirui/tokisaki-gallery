@@ -1,19 +1,35 @@
-import Footer from "@/components/widgets/footer/Footer";
-import HimawariHeader from "@/components/widgets/header/HimawariHeader";
-import Navbar from "@/components/widgets/navbar/Navbar";
-import SingleGallery from "@/components/widgets/singleGallery/SingleGallery";
+// pages/eventDetails.tsx
+
+import { useState, useEffect } from "react";
 import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import React from "react";
-import events from "../../data/events.json";
 import Head from "next/head";
+import Navbar from "@/components/widgets/navbar/Navbar";
+import HimawariHeader from "@/components/widgets/header/HimawariHeader";
+import SingleGallery from "@/components/widgets/singleGallery/SingleGallery";
+import Footer from "@/components/widgets/footer/Footer";
 
-const eventDetails = () => {
+import events from "../../data/events.json";
+
+interface EventData {
+  eventId: string;
+  name: string;
+  location: string;
+  date: string;
+  description: string;
+  link: string;
+}
+
+const EventDetails: React.FC = () => {
   const router = useRouter();
   const { eventId } = router.query;
+  const [event, setEvent] = useState<EventData | null>(null);
 
-  // Find the event data that matches the eventId
-  const event = events.find((event) => event.eventId === eventId);
+  useEffect(() => {
+    // Find the event data that matches the eventId
+    const eventData = events.find((event) => event.eventId === eventId) || null;
+    setEvent(eventData);
+  }, [eventId]);
 
   function formatDate(dateString: string) {
     const options = { day: "numeric", month: "long", year: "numeric" as const };
@@ -46,4 +62,4 @@ const eventDetails = () => {
   );
 };
 
-export default eventDetails;
+export default EventDetails;
