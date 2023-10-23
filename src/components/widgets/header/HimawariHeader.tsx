@@ -52,6 +52,7 @@ const HimawariHeader = ({
           </Stack>
         </HStack>
         <Box
+          textAlign={"center"}
           fontSize="5xl"
           textTransform={"uppercase"}
           fontWeight={"semibold"}
