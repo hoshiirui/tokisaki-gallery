@@ -43,6 +43,7 @@ export default function HomeHero() {
       infiniteLoop={true}
       autoPlay={true}
       interval={5000}
+      swipeable={false}
       renderIndicator={(clickHandler, isSelected, index) => (
         <div
           onClick={clickHandler}

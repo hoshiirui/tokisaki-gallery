@@ -186,7 +186,7 @@
   {
     "photoId": "mnd03",
     "title": "Emanator of Remembrance",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "追憶のエマネーター",
     "eventId": "none",
     "isThumbnail": true,
     "isFame": true
@@ -194,7 +194,7 @@
   {
     "photoId": "tm202",
     "title": "Memory's Resonance",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "記憶の共鳴",
     "eventId": "none",
     "isThumbnail": true,
     "isFame": true
@@ -202,7 +202,7 @@
   {
     "photoId": "jfs01",
     "title": "Imbibitor Lunae's Judgement",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "丹恒・飲月の判断",
     "eventId": "jfest",
     "isThumbnail": false,
     "isFame": true
@@ -210,15 +210,15 @@
   {
     "photoId": "jfs02",
     "title": "The Dragon and The Butterfly",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "龍と蝶",
     "eventId": "jfest",
     "isThumbnail": false,
     "isFame": false
   },
   {
     "photoId": "jfs03",
-    "title": "A Grafecul Inferno",
-    "altTitle": "イルミネーションの道",
+    "title": "A Graceful Inferno",
+    "altTitle": "優雅な地獄",
     "eventId": "jfest",
     "isThumbnail": false,
     "isFame": false
@@ -226,7 +226,7 @@
   {
     "photoId": "jfs04",
     "title": "In Search of Remembrance",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "思い出を求めて",
     "eventId": "jfest",
     "isThumbnail": false,
     "isFame": false
@@ -234,7 +234,7 @@
   {
     "photoId": "jfs05",
     "title": "Another Joyful Game with You",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "あなたとのもう一つの楽しいゲーム",
     "eventId": "jfest",
     "isThumbnail": false,
     "isFame": false
@@ -242,7 +242,7 @@
   {
     "photoId": "jfs06",
     "title": "As Gorgeous as The Snowflake",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "雪のしずくのように美しい",
     "eventId": "jfest",
     "isThumbnail": true,
     "isFame": true
@@ -250,7 +250,7 @@
   {
     "photoId": "jfs07",
     "title": "A Cute Zombie Appear!",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "かわいいゾンビが登場！",
     "eventId": "jfest",
     "isThumbnail": false,
     "isFame": false
@@ -258,7 +258,7 @@
   {
     "photoId": "jfs08",
     "title": "The Yamato Nadeshiko",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "大和撫子",
     "eventId": "jfest",
     "isThumbnail": false,
     "isFame": true
@@ -266,10 +266,97 @@
   {
     "photoId": "jfs09",
     "title": "It's You That Hold The Purest Branch",
-    "altTitle": "イルミネーションの道",
+    "altTitle": "最も純粋な枝を持つのはあなたです",
     "eventId": "jfest",
     "isThumbnail": false,
     "isFame": true
+  },
+  {
+    "photoId": "cwh01",
+    "title": "Wish of The Human Ego",
+    "altTitle": "人間のエゴの願い",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc01",
+    "title": "Emotion of The Artificial",
+    "altTitle": "人工物の感情",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc02",
+    "title": "Iridescent Paint of Life",
+    "altTitle": "虹色に輝く生命の色",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc03",
+    "title": "A Cute Dragon's Descendant",
+    "altTitle": "かわいいドラゴンの末裔",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc04",
+    "title": "As Your Wish!",
+    "altTitle": "あなたの願いとして！",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc05",
+    "title": "The Epitome of Tenderness",
+    "altTitle": "優しさの縮図",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc06",
+    "title": "I've Prepared a Surprise!",
+    "altTitle": "サプライズを用意しました！",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc07",
+    "title": "The Power of Words",
+    "altTitle": "言葉の力",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc08",
+    "title": "The Initial Automata",
+    "altTitle": "初期のオートマトン",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc10",
+    "title": "Witness The Power of My Sword",
+    "altTitle": "我が剣の力を目撃せよ",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yyc11",
+    "title": "'Cause I Love You",
+    "altTitle": "君のことが好きだから",
+    "eventId": "yayac",
+    "isThumbnail": false,
+    "isFame": false
   }
-
 ]

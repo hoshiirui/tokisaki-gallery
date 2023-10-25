@@ -54,7 +54,7 @@ function SinglePhotoCard({ photo }: PhotoProps) {
 
             <Box p="6">
               <HStack flexDirection="column">
-                <Box color="#3A2E26" fontSize="sm">
+                <Box color="#3A2E26" fontSize="sm" textAlign={"center"}>
                   {photo.altTitle || "Default Alt Title"}
                 </Box>
                 <Box
