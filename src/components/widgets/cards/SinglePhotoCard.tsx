@@ -83,10 +83,16 @@ function SinglePhotoCard({ photo }: PhotoProps) {
         trapFocus={false}
       >
         <DrawerOverlay onClick={() => setIsDrawerOpen(false)} />
-        <DrawerContent p={0} bg="rgba(0, 0, 0, 0.5)">
+        <DrawerContent
+          p={0}
+          bg="rgba(0, 0, 0, 0.5)"
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
           <DrawerCloseButton color={"white"} />
           <Image
-            paddingTop={6}
             src={`/img/${
               photo?.eventId !== "none" ? photo.eventId : "single"
             }/${photo.photoId}.jpg`}
