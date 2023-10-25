@@ -106,7 +106,7 @@
   {
     "photoId": "md201",
     "title": "Secret Agent and The Devil",
-    "altTitle": "私のクララ",
+    "altTitle": "秘密諜報員と悪魔",
     "eventId": "nikeb",
     "isThumbnail": true,
     "isFame": false
@@ -114,7 +114,7 @@
   {
     "photoId": "kd201",
     "title": "Wanderer and The Devil",
-    "altTitle": "私のクララ",
+    "altTitle": "放浪者と悪魔",
     "eventId": "nikeb",
     "isThumbnail": true,
     "isFame": false
@@ -170,7 +170,7 @@
   {
     "photoId": "mnd02",
     "title": "The Freezing Beauty",
-    "altTitle": "夕日が落ちるにつれて",
+    "altTitle": "凍てつく美しさ",
     "eventId": "yeoly",
     "isThumbnail": true,
     "isFame": true
@@ -444,6 +444,38 @@
     "title": "Princess of The Astral Express",
     "altTitle": "アストラル特急のプリンセス",
     "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "mor01",
+    "title": "Horn of The Blood Cell Leader",
+    "altTitle": "血球リーダーの角",
+    "eventId": "morud",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "mor02",
+    "title": "Tell Your World",
+    "altTitle": "あなたの世界に伝えてください",
+    "eventId": "morud",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "mor03",
+    "title": "Sovereign of Immernachtreich",
+    "altTitle": "インメルナハトライヒの君主",
+    "eventId": "morud",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "mor04",
+    "title": "Eye of the Wicked Lord",
+    "altTitle": "邪悪な主の目",
+    "eventId": "morud",
     "isThumbnail": false,
     "isFame": false
   }
