@@ -358,5 +358,93 @@
     "eventId": "yayac",
     "isThumbnail": false,
     "isFame": false
+  },
+  {
+    "photoId": "yly01",
+    "title": "An Enlightening Stage",
+    "altTitle": "啓発的なステージ",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly02",
+    "title": "The Flawless Trio",
+    "altTitle": "完璧なトリオ",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly03",
+    "title": "A Warm Cold Painting",
+    "altTitle": "温かく冷たい絵",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly05",
+    "title": "Painting of The Elegance Thorn",
+    "altTitle": "エレガンスの棘の絵",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly06",
+    "title": "A Prayer For Us Two",
+    "altTitle": "私たち二人のための祈り",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly07",
+    "title": "A Tender Feeling",
+    "altTitle": "優しい気持ち",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly04",
+    "title": "Look at These Happiness!",
+    "altTitle": "この幸せを見てください！",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly08",
+    "title": "Depiction of Her Eternal Excellency",
+    "altTitle": "永遠の閣下の描写",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly09",
+    "title": "As The Rose Blooms",
+    "altTitle": "バラが咲くにつれて",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly10",
+    "title": "Cosplay Scoring",
+    "altTitle": "コスプレスコアリング",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "yly11",
+    "title": "Princess of The Astral Express",
+    "altTitle": "アストラル特急のプリンセス",
+    "eventId": "yeoly",
+    "isThumbnail": false,
+    "isFame": false
   }
 ]
