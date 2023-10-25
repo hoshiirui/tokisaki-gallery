@@ -61,7 +61,7 @@ const EventDetails: React.FC = () => {
         }
       />
       <SingleGallery galleryType="photo" isExistEventId={event?.eventId} />
-      <Footer />
+      <Footer isNotMainPage={true} />
     </Box>
   );
 };

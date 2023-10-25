@@ -13,6 +13,9 @@ import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
 
 // Import your logo image
+interface FooterState {
+  isNotMainPage?: boolean;
+}
 
 const SocialButton = ({
   children,
@@ -46,7 +49,7 @@ const SocialButton = ({
   );
 };
 
-export default function Footer() {
+export default function Footer({ isNotMainPage }: FooterState) {
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -64,7 +67,11 @@ export default function Footer() {
       >
         {/* Replace the Logo component with an img element */}
         <Image
-          src={"assets/tokisakilogo-black.png"} // Use the imported logo image as the src
+          src={
+            isNotMainPage === true
+              ? "../assets/tokisakilogo-black.png"
+              : "assets/tokisakilogo-black.png"
+          } // Use the imported logo image as the src
           alt="My Logo"
           height={"40px"}
           width={"120px"} // Set the width of the image
