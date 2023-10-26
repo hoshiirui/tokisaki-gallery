@@ -124,8 +124,56 @@
     "title": "A Gentle Reunion",
     "altTitle": "優しい再会",
     "eventId": "sinfe",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "sin04",
+    "title": "A Forest Watcher's Trainee",
+    "altTitle": "森の監視員の訓練生",
+    "eventId": "sinfe",
     "isThumbnail": true,
     "isFame": true
+  },
+  {
+    "photoId": "sin02",
+    "title": "Under A Clear Umbrella",
+    "altTitle": "透明な傘の下で",
+    "eventId": "sinfe",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "sin03",
+    "title": "Moon Shine on The Afternoon",
+    "altTitle": "午後の月の輝き",
+    "eventId": "sinfe",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "sin05",
+    "title": "The Chilling Envoy",
+    "altTitle": "身も凍る使者",
+    "eventId": "sinfe",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "sin06",
+    "title": "Dragon, Dragon, Dragon!",
+    "altTitle": "ドラゴン、ドラゴン、ドラゴン！",
+    "eventId": "sinfe",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "sin07",
+    "title": "Breeze of Dust",
+    "altTitle": "砂塵の風",
+    "eventId": "sinfe",
+    "isThumbnail": false,
+    "isFame": false
   },
   {
     "photoId": "mnd01",
@@ -229,7 +277,7 @@
     "altTitle": "思い出を求めて",
     "eventId": "jfest",
     "isThumbnail": false,
-    "isFame": false
+    "isFame": true
   },
   {
     "photoId": "jfs05",
@@ -373,7 +421,7 @@
     "altTitle": "完璧なトリオ",
     "eventId": "yeoly",
     "isThumbnail": false,
-    "isFame": false
+    "isFame": true
   },
   {
     "photoId": "yly03",
@@ -476,6 +524,30 @@
     "title": "Eye of the Wicked Lord",
     "altTitle": "邪悪な主の目",
     "eventId": "morud",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "aly01",
+    "title": "Crowfeather on Duty!",
+    "altTitle": "クロウフェザー勤務中！",
+    "eventId": "none",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "acc02",
+    "title": "Strongest Level 5",
+    "altTitle": "最強レベル5",
+    "eventId": "none",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "ver01",
+    "title": "In a Haunted Mountain",
+    "altTitle": "幽霊の山で",
+    "eventId": "none",
     "isThumbnail": false,
     "isFame": false
   }
