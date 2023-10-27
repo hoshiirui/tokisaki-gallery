@@ -6,7 +6,8 @@
     "date": "2023-10-08T14:30:00.000Z",
     "description": "JFEST is the largest cultural and language festival by the UKM Japanese Community of STIKOM Bali.",
     "link": "https://drive.google.com/drive/folders/1qq8RXdqMDwzACSV60T7hFfpps8BZ1lY5?usp=drive_link",
-    "isFame": true
+    "isFame": true,
+    "isShow": true
   },
 
   {
@@ -16,7 +17,8 @@
     "date": "2023-09-10T14:30:00.000Z",
     "description": "An event held by Noda Karya 2023 New Media College",
     "link": "www.google.com",
-    "isFame": true
+    "isFame": true,
+    "isShow": true
   },
   {
     "eventId": "nikeb",
@@ -25,7 +27,8 @@
     "date": "2023-08-20T14:30:00.000Z",
     "description": "An annual event held by Politeknik Negeri Bali. This year's Nikeba Matsuri #4 of Bali State Polytechnic with the theme \"Haru no Kaze\" which means \"Spring Breeze.\" Just as the spirit, hard work, and creativity of the students will continue to bloom and inspire the lives of the community and the nation.",
     "link": "www.google.com",
-    "isFame": true
+    "isFame": true,
+    "isShow": true
   },
   {
     "eventId": "yeoly",
@@ -34,7 +37,8 @@
     "date": "2023-07-01T14:30:00.000Z",
     "description": "One of the most big Japanese Events in Bali held by Key Creative Space",
     "link": "https://drive.google.com/drive/folders/1BEF0Kr9FUB67DGSvV2tEHt4-_ByXAKWk?usp=drive_link",
-    "isFame": true
+    "isFame": true,
+    "isShow": true
   },
   {
     "eventId": "morud",
@@ -43,7 +47,8 @@
     "date": "2023-03-18T14:30:00.000Z",
     "description": "A event held at Arthasedana Singaraja",
     "link": "https://drive.google.com/drive/folders/1js37MFQ-i-pSKZGy4US8CpYcYyvlbBdZ?usp=drive_link",
-    "isFame": true
+    "isFame": true,
+    "isShow": true
   },
   {
     "eventId": "sinfe",
@@ -52,7 +57,8 @@
     "date": "2023-04-30T14:30:00.000Z",
     "description": "An event held at LP RRI Denpasar, also a place where the 'Chance Encounter' happened...",
     "link": "https://drive.google.com/drive/folders/1tP4UEBQSaJRZBpJfkGrt2NZHg06iwXrp?usp=drive_link",
-    "isFame": true
+    "isFame": true,
+    "isShow": true
   },
   {
     "eventId": "fusun",
@@ -61,6 +67,7 @@
     "date": "2023-09-10T14:30:00.000Z",
     "description": "As the seasonal flower blooms beautifully, born a girl that has an indescribable beauty...",
     "link": "www.google.com",
-    "isFame": true
+    "isFame": true,
+    "isShow": false
   }
 ]

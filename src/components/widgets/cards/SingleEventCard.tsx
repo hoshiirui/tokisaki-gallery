@@ -10,6 +10,7 @@ interface EventProps {
     description: string;
     link: string;
     isFame: boolean;
+    isShow: boolean;
   };
 }
 

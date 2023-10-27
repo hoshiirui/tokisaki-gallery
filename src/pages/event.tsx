@@ -18,7 +18,7 @@ const event = () => {
         title="Set of Moments"
         desc="These are all the events that I’ve attend before..."
       />
-      <SingleGallery galleryType="event" isFame={true} />
+      <SingleGallery galleryType="event" isFame={true} isShow={true} />
       <Footer />
     </Box>
   );

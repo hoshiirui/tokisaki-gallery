@@ -11,6 +11,7 @@ interface SingleGalleryProps {
   isSingleGallery?: boolean;
   isExistEventId?: string;
   galleryType: string;
+  isShow?: boolean;
 }
 
 export default function SingleGallery({
@@ -18,6 +19,7 @@ export default function SingleGallery({
   isSingleGallery,
   galleryType,
   isExistEventId,
+  isShow,
 }: SingleGalleryProps) {
   if (galleryType === "photo") {
     let filteredPhotos = photos;
@@ -57,6 +59,9 @@ export default function SingleGallery({
     let filteredEvents = events;
 
     // Apply filters based on props
+    if (isShow) {
+      filteredEvents = filteredEvents.filter((event) => event.isShow === true);
+    }
 
     return (
       <Box px={"70px"}>
