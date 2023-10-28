@@ -1,5 +1,6 @@
 import { Box, HStack, VStack, Text, Image, Button } from "@chakra-ui/react";
 import React from "react";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
@@ -10,7 +11,7 @@ const AboutMe = () => {
         </Box>
         <VStack alignItems={"flex-start"} maxWidth={"585px"} gap={"16px"}>
           <Text fontStyle={"italic"} fontSize={"20px"}>
-            Claris Anastasis
+            Claris Eternalis
           </Text>
           <Text fontSize={"32px"} fontWeight={"bold"} color={"#3A2E26"}>
             PUTU BAGUS RANGGA PERMANA PUTRA ASTAWAN
@@ -36,11 +37,31 @@ const AboutMe = () => {
             captivating storytelling.
           </Text>
           <HStack gap={"12px"}>
-            <Button width={"286px"} height={"48px"}>
-              LinkedIn
+            <Button
+              width={"286px"}
+              height={"48px"}
+              bg={"transparent"}
+              border={"1px solid"}
+              rounded={0}
+              color={"#3A2E26"}
+              _hover={{ bg: "#3A2E26", color: "white" }}
+              gap={"10px"}
+            >
+              <FaLinkedin />
+              <Text>LinkedIn</Text>
             </Button>
-            <Button width={"286px"} height={"48px"}>
-              LinkedIn
+            <Button
+              width={"286px"}
+              height={"48px"}
+              bg={"transparent"}
+              border={"1px solid"}
+              rounded={0}
+              color={"#3A2E26"}
+              _hover={{ bg: "#3A2E26", color: "white" }}
+              gap={"10px"}
+            >
+              <FaInstagram />
+              <Text>Photography Instagram</Text>
             </Button>
           </HStack>
         </VStack>
@@ -48,7 +69,7 @@ const AboutMe = () => {
       <VStack gap={"56px"}>
         <VStack gap={"4px"}>
           <Text fontSize={"36px"} letterSpacing={"4px"}>
-            FOLLOW ME ON INSTAGRAM
+            FOLLOW MY PERSONAL INSTAGRAM
           </Text>
           <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
             @okiya_rangga73
