@@ -1,5 +1,6 @@
-import { VStack, Text, HStack, Image } from "@chakra-ui/react";
+import { VStack, Text, HStack, Image, Link } from "@chakra-ui/react";
 import React from "react";
+import SinglePortfolioCard from "../cards/SinglePortfolioCard";
 
 const PortfolioList = () => {
   return (
@@ -14,51 +15,15 @@ const PortfolioList = () => {
       </VStack>
       <VStack>
         <HStack gap={"64px"}>
-          <VStack maxW={"336px"} gap={"16px"}>
-            <Image src="assets/aboutus/rangga/portfolio/ptr1/test.jpg" />
-            <VStack gap={"4px"}>
-              <Text fontWeight={"bold"} letterSpacing={"1px"}>
-                UI/UX Design
-              </Text>
-              <Text
-                fontSize={"22px"}
-                letterSpacing={"2px"}
-                textTransform={"uppercase"}
-              >
-                MeHome Application
-              </Text>
-            </VStack>
-          </VStack>
-          <VStack maxW={"336px"} gap={"16px"}>
-            <Image src="assets/aboutus/rangga/portfolio/ptr1/test.jpg" />
-            <VStack gap={"4px"}>
-              <Text fontWeight={"bold"} letterSpacing={"1px"}>
-                UI/UX Design
-              </Text>
-              <Text
-                fontSize={"22px"}
-                letterSpacing={"2px"}
-                textTransform={"uppercase"}
-              >
-                MeHome Application
-              </Text>
-            </VStack>
-          </VStack>
-          <VStack maxW={"336px"} gap={"16px"}>
-            <Image src="assets/aboutus/rangga/portfolio/ptr1/test.jpg" />
-            <VStack gap={"4px"}>
-              <Text fontWeight={"bold"} letterSpacing={"1px"}>
-                UI/UX Design
-              </Text>
-              <Text
-                fontSize={"22px"}
-                letterSpacing={"2px"}
-                textTransform={"uppercase"}
-              >
-                MeHome Application
-              </Text>
-            </VStack>
-          </VStack>
+          <Link href="aboutUs/mehome">
+            <SinglePortfolioCard />
+          </Link>
+          <Link href="aboutUs/mehome">
+            <SinglePortfolioCard />
+          </Link>
+          <Link href="aboutUs/mehome">
+            <SinglePortfolioCard />
+          </Link>
         </HStack>
         <HStack></HStack>
       </VStack>
