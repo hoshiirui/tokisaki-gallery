@@ -1,4 +1,12 @@
-import { Box, HStack, VStack, Text, Image, Button } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  VStack,
+  Text,
+  Image,
+  Button,
+  Link,
+} from "@chakra-ui/react";
 import React from "react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -11,7 +19,13 @@ const AboutMe = () => {
         </Box>
         <VStack alignItems={"flex-start"} maxWidth={"585px"} gap={"16px"}>
           <Text fontStyle={"italic"} fontSize={"20px"}>
-            Claris Eternalis
+            Claris{" "}
+            <Link
+              href="https://anastasia-tokisaki-gallery.vercel.app/"
+              target="blank"
+            >
+              Anastasis
+            </Link>
           </Text>
           <Text fontSize={"32px"} fontWeight={"bold"} color={"#3A2E26"}>
             PUTU BAGUS RANGGA PERMANA PUTRA ASTAWAN
@@ -37,32 +51,39 @@ const AboutMe = () => {
             captivating storytelling.
           </Text>
           <HStack gap={"12px"}>
-            <Button
-              width={"286px"}
-              height={"48px"}
-              bg={"transparent"}
-              border={"1px solid"}
-              rounded={0}
-              color={"#3A2E26"}
-              _hover={{ bg: "#3A2E26", color: "white" }}
-              gap={"10px"}
+            <Link
+              href="https://www.linkedin.com/in/rangga-astawan/"
+              target="blank"
             >
-              <FaLinkedin />
-              <Text>LinkedIn</Text>
-            </Button>
-            <Button
-              width={"286px"}
-              height={"48px"}
-              bg={"transparent"}
-              border={"1px solid"}
-              rounded={0}
-              color={"#3A2E26"}
-              _hover={{ bg: "#3A2E26", color: "white" }}
-              gap={"10px"}
-            >
-              <FaInstagram />
-              <Text>Photography Instagram</Text>
-            </Button>
+              <Button
+                width={"286px"}
+                height={"48px"}
+                bg={"transparent"}
+                border={"1px solid"}
+                rounded={0}
+                color={"#3A2E26"}
+                _hover={{ bg: "#3A2E26", color: "white" }}
+                gap={"10px"}
+              >
+                <FaLinkedin />
+                <Text>LinkedIn</Text>
+              </Button>
+            </Link>
+            <Link href="https://www.instagram.com/kazedaa73/" target="blank">
+              <Button
+                width={"286px"}
+                height={"48px"}
+                bg={"transparent"}
+                border={"1px solid"}
+                rounded={0}
+                color={"#3A2E26"}
+                _hover={{ bg: "#3A2E26", color: "white" }}
+                gap={"10px"}
+              >
+                <FaInstagram />
+                <Text>Photography Instagram</Text>
+              </Button>
+            </Link>
           </HStack>
         </VStack>
       </HStack>
