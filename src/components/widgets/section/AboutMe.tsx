@@ -20,12 +20,12 @@ const AboutMe = () => {
         <VStack alignItems={"flex-start"} maxWidth={"585px"} gap={"16px"}>
           <Text fontStyle={"italic"} fontSize={"20px"}>
             Claris{" "}
-            <Link
+            {/* <Link
               href="https://anastasia-tokisaki-gallery.vercel.app/"
               target="blank"
-            >
-              Anastasis
-            </Link>
+            > */}
+            Anastasis
+            {/* </Link> */}
           </Text>
           <Text fontSize={"32px"} fontWeight={"bold"} color={"#3A2E26"}>
             PUTU BAGUS RANGGA PERMANA PUTRA ASTAWAN

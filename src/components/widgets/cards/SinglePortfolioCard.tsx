@@ -23,6 +23,9 @@ const SinglePortfolioCard = () => {
         >
           MeHome Application
         </Text>
+        <Text fontWeight={"bold"} letterSpacing={"1px"}>
+          as UI/UX Designer
+        </Text>
       </VStack>
     </VStack>
   );

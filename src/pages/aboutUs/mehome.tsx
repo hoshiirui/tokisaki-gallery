@@ -30,6 +30,31 @@ const mehome = () => {
           width={"100vw"}
         />
         <Box my={"60px"}>
+          <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
+            Detail Project Aplikasi
+          </Text>
+          <UnorderedList>
+            <ListItem>
+              <Text
+                fontSize={"xl"}
+                fontWeight={"semibold"}
+                color="#84847C"
+                textAlign={"justify"}
+              >
+                Client: Binar Academy
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text
+                fontSize={"xl"}
+                fontWeight={"semibold"}
+                color="#84847C"
+                textAlign={"justify"}
+              >
+                Durasi Project: 2 Bulan
+              </Text>
+            </ListItem>
+          </UnorderedList>
           <VStack gap={"4px"} my={"40px"}>
             <Text
               fontSize={"36px"}
@@ -175,6 +200,82 @@ const mehome = () => {
             width={"100vw"}
             py={"30px"}
           />
+        </Box>
+
+        <Box my={"60px"}>
+          <VStack gap={"4px"} my={"40px"}>
+            <Text
+              fontSize={"36px"}
+              letterSpacing={"4px"}
+              textTransform={"uppercase"}
+            >
+              Brand Identity
+            </Text>
+            <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
+              Berikut adalah identitas dari aplikasi yang saya buat dan
+              penjelasannya
+            </Text>
+          </VStack>
+          <Image
+            src="../assets/aboutus/rangga/portfolio/ptr1/brandidentity.jpg"
+            width={"100vw"}
+            py={"30px"}
+          />
+          <UnorderedList>
+            <ListItem>
+              <Text
+                fontSize={"xl"}
+                fontWeight={"semibold"}
+                color="#84847C"
+                textAlign={"justify"}
+              >
+                Logo Rumah: berarti aplikasi ini merupakan aplikasi untuk
+                pencarian rumah/tempat tinggal sewa
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text
+                fontSize={"xl"}
+                fontWeight={"semibold"}
+                color="#84847C"
+                textAlign={"justify"}
+              >
+                Logo Segitiga Ke Atas: Seperti anak panah, yang menandakan bahwa
+                kita mencari “tempat tinggal” baru pasti ada alasannya. Ini
+                mengandung harapan bahwa orang yang mendapatkan “tempat tinggal”
+                baru ini agar dapat jadi penunjang mereka untuk bisa terus maju
+                dan menjalani hidupnya.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text
+                fontSize={"xl"}
+                fontWeight={"semibold"}
+                color="#84847C"
+                textAlign={"justify"}
+              >
+                Warna Oranye: Oranye adalah warna yang hangat dan nyaman. Ini
+                bisa menggambarkan perasaan kenyamanan dan kehangatan yang ingin
+                diberikan oleh aplikasi pemesanan kos, serta kos yang akan
+                ditinggali kepada pengguna. Pengguna mungkin merasa bahwa mereka
+                dapat merasa nyaman dan di rumah saat menggunakan aplikasi ini.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text
+                fontSize={"xl"}
+                fontWeight={"semibold"}
+                color="#84847C"
+                textAlign={"justify"}
+              >
+                Font Poppins: Poppins adalah font yang modern, bersih, dan mudah
+                dibaca yang dapat memperkuat kesan profesional dan terpercaya
+                pada aplikasi ini. Font ini bisa membantu menciptakan pengalaman
+                pengguna yang positif dan memudahkan pengguna untuk menavigasi
+                aplikasi yang dibangun.
+              </Text>
+            </ListItem>
+          </UnorderedList>
         </Box>
 
         <Box my={"60px"}>
@@ -325,7 +426,7 @@ const mehome = () => {
           <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
             Severity: High
           </Text>
-          <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
+          <Text fontSize={"22px"} textAlign={"justify"} color={"#84847C"}>
             Redesign pertama dilakukan pada form daftar akun dikarenakan dua
             responden mengatakan bahwa warna yang digunakan pada komponen
             tersebut kurang bisa terlihat dengan jelas. Solusi yang diterapkan
@@ -355,7 +456,7 @@ const mehome = () => {
           <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
             Severity: High
           </Text>
-          <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
+          <Text fontSize={"22px"} textAlign={"justify"} color={"#84847C"}>
             Redesign kedua dilakukan pada hasil pencarian. Salah satu responden
             berkomentar bahwa dia bingung saat melihat hasil pencarian tidak
             terfokus pada keyword yang dicari, melainkan tercampur dengan
@@ -387,7 +488,7 @@ const mehome = () => {
           <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
             Severity: High
           </Text>
-          <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
+          <Text fontSize={"22px"} textAlign={"justify"} color={"#84847C"}>
             Redesign ketiga dilakukan pada komponen gambar pada halaman detail
             rumah kos. Disini ditambahkan fitur agar user bisa melihat versi
             full dari gambar ketika gambar di klik. Hal ini akan mempermudah
@@ -419,7 +520,7 @@ const mehome = () => {
           <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
             Severity: Medium
           </Text>
-          <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
+          <Text fontSize={"22px"} textAlign={"justify"} color={"#84847C"}>
             Redesign terakhir dilakukan pada page detail halaman kos. Pada
             halaman ini ditambahkan informasi baru berupa "Peraturan Kos" bagi
             kos yang memiliki peraturan khusus. Redesign ini dilakukan
