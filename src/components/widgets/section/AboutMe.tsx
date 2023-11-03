@@ -8,9 +8,20 @@ import {
   Link,
 } from "@chakra-ui/react";
 import React from "react";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const AboutMe = () => {
+  function sendEmail() {
+    const emailAddress = "bagus.astawan@gmail.com"; // Replace with the recipient's email address
+    const subject = "Talk with Me"; // Replace with your desired subject
+
+    // Create the mailto link
+    const mailtoLink = `mailto:${emailAddress}?subject=${subject}`;
+
+    // Open the user's email client
+    window.location.href = mailtoLink;
+  }
+
   return (
     <VStack gap={"80px"}>
       <HStack px={"135px"} gap={"90px"}>
@@ -69,6 +80,48 @@ const AboutMe = () => {
                 <Text>LinkedIn</Text>
               </Button>
             </Link>
+            {/* <Link href="https://www.instagram.com/kazedaa73/" target="blank">
+              <Button
+                width={"286px"}
+                height={"48px"}
+                bg={"transparent"}
+                border={"1px solid"}
+                rounded={0}
+                color={"#3A2E26"}
+                _hover={{ bg: "#3A2E26", color: "white" }}
+                gap={"10px"}
+              >
+                <FaInstagram />
+                <Text>Photography Instagram</Text>
+              </Button>
+            </Link> */}
+            <Link href="#" onClick={sendEmail} isExternal>
+              <Button
+                width={"286px"}
+                height={"48px"}
+                bg={"transparent"}
+                border={"1px solid"}
+                rounded={0}
+                color={"#3A2E26"}
+                _hover={{ bg: "#3A2E26", color: "white" }}
+                gap={"10px"}
+              >
+                <FaEnvelope />
+                <Text>Contact Me via Email</Text>
+              </Button>
+            </Link>
+          </HStack>
+        </VStack>
+      </HStack>
+      <VStack gap={"56px"}>
+        <VStack gap={"4px"}>
+          <Text fontSize={"36px"} letterSpacing={"4px"}>
+            FOLLOW MY INSTAGRAM(S)
+          </Text>
+          <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
+            Get to know me more by following these instagrams of mine
+          </Text>
+          <HStack gap={"20px"} my={"40px"}>
             <Link href="https://www.instagram.com/kazedaa73/" target="blank">
               <Button
                 width={"286px"}
@@ -84,17 +137,25 @@ const AboutMe = () => {
                 <Text>Photography Instagram</Text>
               </Button>
             </Link>
+            <Link
+              href="https://www.instagram.com/okiya_rangga73/"
+              target="blank"
+            >
+              <Button
+                width={"286px"}
+                height={"48px"}
+                bg={"transparent"}
+                border={"1px solid"}
+                rounded={0}
+                color={"#3A2E26"}
+                _hover={{ bg: "#3A2E26", color: "white" }}
+                gap={"10px"}
+              >
+                <FaInstagram />
+                <Text>Personal Instagram</Text>
+              </Button>
+            </Link>
           </HStack>
-        </VStack>
-      </HStack>
-      <VStack gap={"56px"}>
-        <VStack gap={"4px"}>
-          <Text fontSize={"36px"} letterSpacing={"4px"}>
-            FOLLOW MY PERSONAL INSTAGRAM
-          </Text>
-          <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
-            @okiya_rangga73
-          </Text>
         </VStack>
         <VStack>
           <HStack gap={"50px"} zIndex={"999"}>
