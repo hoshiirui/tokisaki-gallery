@@ -8,9 +8,17 @@ import {
   Text,
   UnorderedList,
   VStack,
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
+import RFIDatas from "../../data/meHomeRFI.json";
 
 const mehome = () => {
   return (
@@ -30,31 +38,6 @@ const mehome = () => {
           width={"100vw"}
         />
         <Box my={"60px"}>
-          <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
-            Detail Project Aplikasi
-          </Text>
-          <UnorderedList>
-            <ListItem>
-              <Text
-                fontSize={"xl"}
-                fontWeight={"semibold"}
-                color="#84847C"
-                textAlign={"justify"}
-              >
-                Client: Binar Academy
-              </Text>
-            </ListItem>
-            <ListItem>
-              <Text
-                fontSize={"xl"}
-                fontWeight={"semibold"}
-                color="#84847C"
-                textAlign={"justify"}
-              >
-                Durasi Project: 2 Bulan
-              </Text>
-            </ListItem>
-          </UnorderedList>
           <VStack gap={"4px"} my={"40px"}>
             <Text
               fontSize={"36px"}
@@ -73,41 +56,6 @@ const mehome = () => {
             width={"100vw"}
             py={"30px"}
           />
-
-          {/* <UnorderedList>
-            <ListItem>
-              <Text
-                fontSize={"xl"}
-                fontWeight={"semibold"}
-                color="#3a2e26"
-                textAlign={"justify"}
-              >
-                Belum terbiasa dengan keadaan daerah sekitar kampusnya.
-              </Text>
-            </ListItem>
-            <ListItem>
-              <Text
-                fontSize={"xl"}
-                fontWeight={"semibold"}
-                color="#3a2e26"
-                textAlign={"justify"}
-              >
-                Kesulitan untuk mencari apartemen yang sesuai dengan kriteria
-                dan dekat dengan universitasnya.
-              </Text>
-            </ListItem>
-            <ListItem>
-              <Text
-                fontSize={"xl"}
-                fontWeight={"semibold"}
-                color="#3a2e26"
-                textAlign={"justify"}
-              >
-                Tidak ingin menghabiskan banyak waktu dan sumber daya untuk
-                mendatangi satu-satu apartemen untuk mengecek ketersediaannya.
-              </Text>
-            </ListItem>
-          </UnorderedList> */}
         </Box>
 
         <Box my={"60px"}>
@@ -178,9 +126,13 @@ const mehome = () => {
       <HimawariHeader
         title="Style Guides"
         desc="Berikut adalah style yang digunakan dalam aplikasi ini"
-        hasShortExplanation="Design system dan style guide disini terdiri dari Moodboard, Design System, Components, dan Wireflow"
       />
-      <Box minH={"100vh"} px={"135px"} py={"40px"}>
+
+      <Box minH={"100vh"} px={"135px"} py={"10px"}>
+        <Image
+          src="../assets/aboutus/rangga/portfolio/ptr1/styleguide.png"
+          width={"100vw"}
+        />
         <Box my={"60px"}>
           <VStack gap={"4px"} my={"40px"}>
             <Text
@@ -229,8 +181,11 @@ const mehome = () => {
                 color="#84847C"
                 textAlign={"justify"}
               >
-                Logo Rumah: berarti aplikasi ini merupakan aplikasi untuk
-                pencarian rumah/tempat tinggal sewa
+                <Text as={"span"} fontWeight={"bold"} color={"#3a2e26"}>
+                  Logo Rumah:
+                </Text>{" "}
+                berarti aplikasi ini merupakan aplikasi untuk pencarian
+                rumah/tempat tinggal sewa
               </Text>
             </ListItem>
             <ListItem>
@@ -240,11 +195,13 @@ const mehome = () => {
                 color="#84847C"
                 textAlign={"justify"}
               >
-                Logo Segitiga Ke Atas: Seperti anak panah, yang menandakan bahwa
-                kita mencari “tempat tinggal” baru pasti ada alasannya. Ini
-                mengandung harapan bahwa orang yang mendapatkan “tempat tinggal”
-                baru ini agar dapat jadi penunjang mereka untuk bisa terus maju
-                dan menjalani hidupnya.
+                <Text as={"span"} fontWeight={"bold"} color={"#3a2e26"}>
+                  Logo Segitiga Ke Atas:
+                </Text>{" "}
+                Seperti anak panah, yang menandakan bahwa kita mencari “tempat
+                tinggal” baru pasti ada alasannya. Ini mengandung harapan bahwa
+                orang yang mendapatkan “tempat tinggal” baru ini agar dapat jadi
+                penunjang mereka untuk bisa terus maju dan menjalani hidupnya.
               </Text>
             </ListItem>
             <ListItem>
@@ -254,8 +211,11 @@ const mehome = () => {
                 color="#84847C"
                 textAlign={"justify"}
               >
-                Warna Oranye: Oranye adalah warna yang hangat dan nyaman. Ini
-                bisa menggambarkan perasaan kenyamanan dan kehangatan yang ingin
+                <Text as={"span"} fontWeight={"bold"} color={"#3a2e26"}>
+                  Warna Oranye:
+                </Text>{" "}
+                Oranye adalah warna yang hangat dan nyaman. Ini bisa
+                menggambarkan perasaan kenyamanan dan kehangatan yang ingin
                 diberikan oleh aplikasi pemesanan kos, serta kos yang akan
                 ditinggali kepada pengguna. Pengguna mungkin merasa bahwa mereka
                 dapat merasa nyaman dan di rumah saat menggunakan aplikasi ini.
@@ -268,11 +228,14 @@ const mehome = () => {
                 color="#84847C"
                 textAlign={"justify"}
               >
-                Font Poppins: Poppins adalah font yang modern, bersih, dan mudah
-                dibaca yang dapat memperkuat kesan profesional dan terpercaya
-                pada aplikasi ini. Font ini bisa membantu menciptakan pengalaman
-                pengguna yang positif dan memudahkan pengguna untuk menavigasi
-                aplikasi yang dibangun.
+                <Text as={"span"} fontWeight={"bold"} color={"#3a2e26"}>
+                  Font Poppins:
+                </Text>{" "}
+                Poppins adalah font yang modern, bersih, dan mudah dibaca yang
+                dapat memperkuat kesan profesional dan terpercaya pada aplikasi
+                ini. Font ini bisa membantu menciptakan pengalaman pengguna yang
+                positif dan memudahkan pengguna untuk menavigasi aplikasi yang
+                dibangun.
               </Text>
             </ListItem>
           </UnorderedList>
@@ -338,28 +301,6 @@ const mehome = () => {
             py={"20px"}
           />
         </Box>
-
-        {/* <Box my={"60px"}>
-          <VStack gap={"4px"} my={"30px"}>
-            <Text
-              fontSize={"36px"}
-              letterSpacing={"4px"}
-              textTransform={"uppercase"}
-            >
-              Information Architexture
-            </Text>
-            <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
-              Setelah membangun User Journey Map, saya menyusun Information
-              Architexture berdasarkan fitur-fitur unggulan yang sudah saya
-              rencanakan.
-            </Text>
-          </VStack>
-          <Image
-            src="../assets/aboutus/rangga/portfolio/ptr1/informationarchitexture.png"
-            width={"100vw"}
-            py={"20px"}
-          />
-        </Box> */}
       </Box>
 
       {/* TESTING */}
@@ -367,9 +308,12 @@ const mehome = () => {
       <HimawariHeader
         title="Hasil Pengujian"
         desc="Pain Points and Room for Improvement"
-        hasShortExplanation="Setelah dilakukan pengujian, didapatkan beberapa pain points dan room for improvement"
       />
-      <Box minH={"100vh"} px={"135px"} py={"40px"}>
+      <Box minH={"100vh"} px={"135px"} py={"10px"}>
+        <Image
+          src="../assets/aboutus/rangga/portfolio/ptr1/hasilpengujian.png"
+          width={"100vw"}
+        />
         <Box my={"60px"}>
           <VStack gap={"4px"} my={"20px"}>
             <Text
@@ -384,16 +328,62 @@ const mehome = () => {
               beserta tingkat severitynya.
             </Text>
           </VStack>
-          <Image
-            src="../assets/aboutus/rangga/portfolio/ptr1/room1.jpg"
-            width={"100vw"}
-            py={"30px"}
-          />
-          <Image
-            src="../assets/aboutus/rangga/portfolio/ptr1/room2.jpg"
-            width={"100vw"}
-            py={"30px"}
-          />
+          <Table variant="simple" mt={"50px"}>
+            <Thead bgColor={"#3a2e26"}>
+              <Tr>
+                <Th fontSize={"16px"} fontWeight={"bold"} color={"white"}>
+                  Responden
+                </Th>
+                <Th fontSize={"16px"} fontWeight={"bold"} color={"white"}>
+                  Kategori
+                </Th>
+                <Th fontSize={"16px"} fontWeight={"bold"} color={"white"}>
+                  Task
+                </Th>
+                <Th fontSize={"16px"} fontWeight={"bold"} color={"white"}>
+                  Permasalahan
+                </Th>
+                <Th fontSize={"16px"} fontWeight={"bold"} color={"white"}>
+                  Tag 1
+                </Th>
+                <Th fontSize={"16px"} fontWeight={"bold"} color={"white"}>
+                  Tag 2
+                </Th>
+                <Th fontSize={"16px"} fontWeight={"bold"} color={"white"}>
+                  Solusi
+                </Th>
+                <Th fontSize={"16px"} fontWeight={"bold"} color={"white"}>
+                  Severity
+                </Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              {RFIDatas.map((RFIData, index) => (
+                <Tr key={index}>
+                  <Td>{RFIData.username}</Td>
+                  <Td>{RFIData.category}</Td>
+                  <Td>{RFIData.task}</Td>
+                  <Td>{RFIData.problem}</Td>
+                  <Td textAlign={"center"}>{RFIData.tag1}</Td>
+                  <Td textAlign={"center"}>{RFIData.tag2}</Td>
+                  <Td>{RFIData.solusi}</Td>
+                  <Td textAlign={"center"}>
+                    <Text
+                      color={
+                        RFIData.severity === "High"
+                          ? "red"
+                          : RFIData.severity === "Medium"
+                          ? "#c7ab22"
+                          : "green"
+                      }
+                    >
+                      {RFIData.severity}
+                    </Text>
+                  </Td>
+                </Tr>
+              ))}
+            </Tbody>
+          </Table>
         </Box>
       </Box>
 
@@ -401,10 +391,13 @@ const mehome = () => {
 
       <HimawariHeader
         title="REDESIGN"
-        desc="Perbaikan Aplikasi"
-        hasShortExplanation="Dari pain point dan room for improvement, dilakukan beberapa redesign untuk menambah tingkat kemudahan dalam penggunaan aplikasi"
+        desc="Perbaikan Aplikasi berdasarkan Pain Points"
       />
-      <Box minH={"100vh"} px={"135px"} py={"40px"}>
+      <Box minH={"100vh"} px={"135px"} py={"10px"}>
+        <Image
+          src="../assets/aboutus/rangga/portfolio/ptr1/redesignthumb.jpg"
+          width={"100vw"}
+        />
         <Box my={"60px"}>
           <VStack gap={"4px"} my={"40px"}>
             <Text
@@ -517,7 +510,7 @@ const mehome = () => {
             width={"100vw"}
             py={"20px"}
           />
-          <Text fontSize={"24px"} fontWeight={"bold"} color={"yellow"}>
+          <Text fontSize={"24px"} fontWeight={"bold"} color={"#c7ab22"}>
             Severity: Medium
           </Text>
           <Text fontSize={"22px"} textAlign={"justify"} color={"#84847C"}>

@@ -1,0 +1,72 @@
+[
+  {
+    "username": "Arisudana, Agung",
+    "category": "Form Pendaftaran",
+    "task": "Task 1 (Daftar Akun)",
+    "problem": "Warna font yang digunakan pada saat daftar akun kurang bisa dilihat",
+    "tag1": "Font",
+    "tag2": "Bingung",
+    "solusi": "Menggunakan warna yang lebih gelap (Primary600 keatas)",
+    "severity": "High"
+  },
+  {
+    "username": "Arisudana",
+    "category": "Pencarian",
+    "task": "Task 2 (Pencarian Rumah Kos Agung)",
+    "problem": "Hasil search dan rekomendasi menjadi satu sehinigga membingungkan",
+    "tag1": "Search Result",
+    "tag2": "Bingung",
+    "solusi": "Memisahkan section hasil pencarian dan rekomendasi",
+    "severity": "High"
+  },
+  {
+    "username": "Arisudana",
+    "category": "Halaman Detail",
+    "task": "Task 3 (Sewa Rumah Kos Hendra)",
+    "problem": "Gambar yang ada dalam prototype tidak dapat di zoom sehingga kurang jelas",
+    "tag1": "Gambar",
+    "tag2": "Kecewa",
+    "solusi": "Membuat gambar dapat diperbesar dalam prototype",
+    "severity": "High"
+  },
+  {
+    "username": "Allycia",
+    "category": "Pencarian",
+    "task": "Task 2 (Pencarian Rumah Kos Agung)",
+    "problem": "Filter tidak dapat digunakan untuk menyaring hasil pencarian",
+    "tag1": "Filter Pencarian",
+    "tag2": "Kecewa",
+    "solusi": "Menambahkan task baru untuk mencari tempat tinggal sewa dengan kriteria spesifik sehingga pengguna dapat mencoba fitur filter",
+    "severity": "Medium"
+  },
+  {
+    "username": "Agung",
+    "category": "Pembayaran",
+    "task": "Task 3 (Sewa Rumah Kos Hendra)",
+    "problem": "Pada saat copy nomor virtual account, overlay malah tertutup",
+    "tag1": "Overlay",
+    "tag2": "Kecewa",
+    "solusi": "Memperbaiki prototype sehingga pada saat di copy, overlay tetap terbuka",
+    "severity": "Medium"
+  },
+  {
+    "username": "Arisudana",
+    "category": "Halaman Detail",
+    "task": "Task 3 (Sewa Rumah Kos Hendra)",
+    "problem": "Tidak adanya informasi tentang perturan khusus yang dimiliki oleh suatu kos",
+    "tag1": "Informasi",
+    "tag2": "Saran",
+    "solusi": "Menambahkan informasi tersebut pada halaman detail",
+    "severity": "Medium"
+  },
+  {
+    "username": "Gusnand",
+    "category": "Pencarian",
+    "task": "Task 2 (Pencarian Rumah Kos Agung)",
+    "problem": "Tidak adanya fitur untuk menentukan titik lokasi spesifik sebagai dasar kita untuk mencari kos",
+    "tag1": "Lokasi",
+    "tag2": "Saran",
+    "solusi": "Menambahkan fitur atur titik lokasi pada aplikasi",
+    "severity": "Medium"
+  }
+]
