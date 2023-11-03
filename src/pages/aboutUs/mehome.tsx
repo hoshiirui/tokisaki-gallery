@@ -423,7 +423,7 @@ const mehome = () => {
             width={"100vw"}
             py={"30px"}
           />
-          <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
+          <Text fontSize={"24px"} fontWeight={"bold"} color={"red"}>
             Severity: High
           </Text>
           <Text fontSize={"22px"} textAlign={"justify"} color={"#84847C"}>
@@ -453,7 +453,7 @@ const mehome = () => {
             width={"100vw"}
             py={"20px"}
           />
-          <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
+          <Text fontSize={"24px"} fontWeight={"bold"} color={"red"}>
             Severity: High
           </Text>
           <Text fontSize={"22px"} textAlign={"justify"} color={"#84847C"}>
@@ -485,7 +485,7 @@ const mehome = () => {
             width={"100vw"}
             py={"20px"}
           />
-          <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
+          <Text fontSize={"24px"} fontWeight={"bold"} color={"red"}>
             Severity: High
           </Text>
           <Text fontSize={"22px"} textAlign={"justify"} color={"#84847C"}>
@@ -517,15 +517,15 @@ const mehome = () => {
             width={"100vw"}
             py={"20px"}
           />
-          <Text fontSize={"24px"} fontWeight={"bold"} color={"black"}>
+          <Text fontSize={"24px"} fontWeight={"bold"} color={"yellow"}>
             Severity: Medium
           </Text>
           <Text fontSize={"22px"} textAlign={"justify"} color={"#84847C"}>
             Redesign terakhir dilakukan pada page detail halaman kos. Pada
-            halaman ini ditambahkan informasi baru berupa "Peraturan Kos" bagi
-            kos yang memiliki peraturan khusus. Redesign ini dilakukan
-            berdasarkan feedback dari salah satu responden pada saat testing
-            yang menceritakan pengalamannya bahwa beberapa kos memiliki
+            halaman ini ditambahkan informasi baru berupa &quot;Peraturan Kos
+            &quot; bagi kos yang memiliki peraturan khusus. Redesign ini
+            dilakukan berdasarkan feedback dari salah satu responden pada saat
+            testing yang menceritakan pengalamannya bahwa beberapa kos memiliki
             peraturan tertentu. Dengan mengetahui peraturan-peraturan yang ada
             pada suatu kos diharapkan dapat menjadi bahan pertimbangan dalam
             pengambilan keptusan.
