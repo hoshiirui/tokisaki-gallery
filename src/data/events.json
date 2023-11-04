@@ -72,12 +72,12 @@
   },
   {
     "eventId": "integ",
-    "name": "Integer ~slfj~",
+    "name": "Integer 2023 ~Jouhoukougaku no Sekai~",
     "location": "Auditorium Undiksha Singaraja",
     "date": "2023-10-29T14:30:00.000Z",
-    "description": "As the seasonal flower blooms beautifully, born a girl that has an indescribable beauty...",
-    "link": "www.google.com",
+    "description": "Jouhoukougaku no Sekai is the first cosplay event held on Information Technology Grand Celebration (Integer) series of events",
+    "link": "https://drive.google.com/drive/folders/17WdpG3ZmcTbbT9FJ5weKPqFFLH8hnazW?usp=sharing",
     "isFame": true,
-    "isShow": false
+    "isShow": true
   }
 ]

@@ -325,7 +325,7 @@ const mehome = () => {
             </Text>
             <Text fontSize={"22px"} fontStyle={"italic"} color={"#84847C"}>
               Berikut adalah permaalahan-permasalahan yang ditemukan, solusi,
-              beserta tingkat severitynya.
+              beserta tingkat severity-nya.
             </Text>
           </VStack>
           <Table variant="simple" mt={"50px"}>

@@ -550,5 +550,61 @@
     "eventId": "none",
     "isThumbnail": false,
     "isFame": false
+  },
+  {
+    "photoId": "int01",
+    "title": "Twirling Light",
+    "altTitle": "くるくる光",
+    "eventId": "integ",
+    "isThumbnail": true,
+    "isFame": true
+  },
+  {
+    "photoId": "int02",
+    "title": "Cuteness Overload!",
+    "altTitle": "可愛さオーバーロード！",
+    "eventId": "integ",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "int03",
+    "title": "Inheritor of The Crimson Monarch",
+    "altTitle": "クリムゾン・モナークの継承者",
+    "eventId": "integ",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "int04",
+    "title": "Guardian of Einherjar",
+    "altTitle": "エインヘルヤルの守護者",
+    "eventId": "integ",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "int05",
+    "title": "Claris Lunaris",
+    "altTitle": "澄んだ月明かり",
+    "eventId": "integ",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "int06",
+    "title": "Severing The Ties of Immortality",
+    "altTitle": "不死の絆を断ち切る",
+    "eventId": "integ",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "int07",
+    "title": "A Dance for You",
+    "altTitle": "あなたのためのダンス",
+    "eventId": "integ",
+    "isThumbnail": false,
+    "isFame": false
   }
 ]
