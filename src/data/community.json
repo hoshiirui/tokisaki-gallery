@@ -1,0 +1,90 @@
+[
+  {
+    "photoId": "art01",
+    "title": "You're My Flashlight",
+    "with": "@artelune_s",
+    "char": "Kafka",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "art02",
+    "title": "You're My Flashlight",
+    "with": "@artelune_s",
+    "char": "Tingyun",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "ast01",
+    "title": "You're My Flashlight",
+    "with": "@astreahoshi",
+    "char": "Elaina",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "aya01",
+    "title": "You're My Flashlight",
+    "with": "@kaede4yatrii_",
+    "char": "Kobo Kanaeru",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "aya02",
+    "title": "You're My Flashlight",
+    "with": "@kaede4yatrii_",
+    "char": "Shizuku-tan",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "aya03",
+    "title": "You're My Flashlight",
+    "with": "@kaede4yatrii_",
+    "char": "Vestia Zeta",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "bii01",
+    "title": "You're My Flashlight",
+    "with": "@b.i_sujii",
+    "char": "Collei",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "bii02",
+    "title": "You're My Flashlight",
+    "with": "@b.i_sujii",
+    "char": "Hoshimachi Suisei",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "dym01",
+    "title": "You're My Flashlight",
+    "with": "@dymonteaxixie",
+    "char": "Gawr Gura",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "dym02",
+    "title": "You're My Flashlight",
+    "with": "@dymonteaxixie",
+    "char": "Klee",
+    "type": "fscos",
+    "isShow": true
+  },
+  {
+    "photoId": "kai01",
+    "title": "You're My Flashlight",
+    "with": "@dymonteaxixie",
+    "char": "Guizhong",
+    "type": "fscos",
+    "isShow": true
+  }
+]

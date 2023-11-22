@@ -600,11 +600,123 @@
     "isFame": false
   },
   {
-    "photoId": "int07",
-    "title": "A Dance for You",
-    "altTitle": "あなたのためのダンス",
-    "eventId": "integ",
+    "photoId": "djf01",
+    "title": "Maiden of Frost",
+    "altTitle": "霜の乙女",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "djf02",
+    "title": "Noisy Rain in November",
+    "altTitle": "11月の騒々しい雨",
+    "eventId": "djafu",
     "isThumbnail": false,
     "isFame": false
+  },
+  {
+    "photoId": "djf03",
+    "title": "Whisper of Incision",
+    "altTitle": "切開のささやき",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf04",
+    "title": "Sinner's Encore",
+    "altTitle": "罪人のアンコール",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": true
+  },
+  {
+    "photoId": "djf05",
+    "title": "The Verdant Strider",
+    "altTitle": "緑のストライダー",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf06",
+    "title": "If You Want, I Will...",
+    "altTitle": "あなたが望むなら、私はそうします...",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf07",
+    "title": "Oath of Bloom",
+    "altTitle": "開花の誓い",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf08",
+    "title": "Shine of Rebirth",
+    "altTitle": "再生の輝き",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf09",
+    "title": "Melting Point of Tears",
+    "altTitle": "涙の融点",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf10",
+    "title": "An Imaginary Stage",
+    "altTitle": "空想の舞台",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf11",
+    "title": "Heartfelt Realization",
+    "altTitle": "心からの実感",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf12",
+    "title": "Sakura Splendor",
+    "altTitle": "サクラスプレンダー",
+    "eventId": "djafu",
+    "isThumbnail": true,
+    "isFame": true
+  },
+  {
+    "photoId": "djf13",
+    "title": "Hello, Goodbye, and Hello",
+    "altTitle": "ヘロー, グドバイ, アンドヘロー",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf14",
+    "title": "Elohim's Nightmare",
+    "altTitle": "エローヒムの悪夢",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": false
+  },
+  {
+    "photoId": "djf15",
+    "title": "Dignity of The Nessun Dorma",
+    "altTitle": "ネサン・ドーマーの尊厳",
+    "eventId": "djafu",
+    "isThumbnail": false,
+    "isFame": true
   }
 ]
